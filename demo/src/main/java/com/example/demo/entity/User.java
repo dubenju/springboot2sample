@@ -8,14 +8,27 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import org.apache.commons.lang3.StringUtils;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
 /**
  * @author DBJ
  *
  */
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
 @Entity
 public class User {
     @Id
-    @GeneratedValue
+    // @GeneratedValue
     private long id;
 
     @Column(nullable = false, unique = true)
@@ -26,4 +39,20 @@ public class User {
 
     @Column(nullable = false)
     private int age;
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if ((obj instanceof User) == false) {
+            return false;   
+        }
+        User o = (User) obj;
+
+        return o.id == this.id &&
+        StringUtils.equals(o.userName, this.userName) &&
+        StringUtils.equals(o.password, this.password) &&
+        o.age == this.age;
+    }
 }
