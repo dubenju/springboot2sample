@@ -38,7 +38,7 @@ public class User {
     private String password;
 
     @Column(nullable = false)
-    private int age;
+    private Integer age;
 
     @Override
     public boolean equals(Object obj) {
@@ -53,6 +53,6 @@ public class User {
         return o.id == this.id &&
         StringUtils.equals(o.userName, this.userName) &&
         StringUtils.equals(o.password, this.password) &&
-        o.age == this.age;
+        o.age.equals(this.age);
     }
 }

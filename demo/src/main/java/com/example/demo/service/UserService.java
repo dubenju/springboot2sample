@@ -2,16 +2,17 @@ package com.example.demo.service;
 
 import java.util.List;
 
+import com.example.demo.bean.UserForm;
 import com.example.demo.entity.User;
 
 public interface UserService {
-    public List<User> getUserList();
+    public List<UserForm> getUserList();
 
-    public User findUserById(long id);
+    public UserForm findUserById(long id);
 
-    public void save(User user);
+    public void save(UserForm user);
 
-    public void edit(User user);
+    public void edit(UserForm user);
 
-    public void delete(User id);
+    public void delete(UserForm id);
 }
