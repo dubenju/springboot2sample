@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<OBJECT name="bzdownload" ID="bzdownload" CLASSID="CLSID:D885FC3C-1E67-49C2-843E-EAFD2A1E148E"
+ CODEBASE="${link.CodeBase}bzmzz12.cab#version=1.1.0.4" WIDTH=0 HEIGHT=0>
+</OBJECT>
+<script>
+console.log("bef");
+rc = document.bzdownload.DownloadFile("http://localhost:8080/download");
+console.log("rc~" + rc);
+</script>
+<input type="hidden" name="uploadhtml" value="">
+
+</body>
+</html>
