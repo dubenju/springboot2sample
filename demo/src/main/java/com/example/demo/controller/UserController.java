@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.bean.UserForm;
-import com.example.demo.entity.User;
+import com.example.demo.entity.LoginUser;
 import com.example.demo.service.UserService;
 
 @Controller

@@ -7,21 +7,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.bean.UserForm;
-import com.example.demo.entity.User;
-import com.example.demo.repository.UserRepository;
+import com.example.demo.entity.LoginUser;
+import com.example.demo.repository.LoginUserRepository;
 import com.example.demo.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserRepository userRepository;
+    private LoginUserRepository userRepository;
 
     @Override
     public List<UserForm> getUserList() {
         List<UserForm> res = new ArrayList<UserForm>();
-        List<User> list = userRepository.findAll();
-        for( User user : list) {
+        List<LoginUser> list = userRepository.findAll();
+        for( LoginUser user : list) {
             UserForm form = new UserForm(user);
             res.add(form);
         }
@@ -30,7 +30,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserForm findUserById(long id) {
-        User user =  userRepository.findById(id);
+        LoginUser user =  userRepository.findById(id);
         UserForm res = new UserForm(user);
         return res;
     }

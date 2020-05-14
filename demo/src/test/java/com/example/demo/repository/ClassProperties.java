@@ -3,13 +3,14 @@ package com.example.demo.repository;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-import com.example.demo.entity.User;
+import com.example.demo.entity.LoginUser;
+import com.example.demo.entity.pk.LoginUserId;
 
 public class ClassProperties {
 
     public static void main(String[] args) {
-    User user = new User(1L, "admin", "123", 1);
-    ClassProperties.getProperties(user);
+        LoginUser user = new LoginUser(new LoginUserId(1L), "admin", "123", 1);
+        ClassProperties.getProperties(user);
     }
 
     public static void getProperties(Object object){

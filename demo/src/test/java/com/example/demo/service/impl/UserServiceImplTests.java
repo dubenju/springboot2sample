@@ -12,8 +12,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.example.demo.bean.UserForm;
-import com.example.demo.entity.User;
-import com.example.demo.repository.UserRepository;
+import com.example.demo.entity.LoginUser;
+import com.example.demo.entity.pk.LoginUserId;
+import com.example.demo.repository.LoginUserRepository;
 
 import junit.framework.Assert;
 @RunWith(SpringRunner.class)
@@ -22,7 +23,7 @@ public class UserServiceImplTests {
     @Autowired
     private UserServiceImpl userServiceImpl;
     @Autowired
-    private UserRepository userRepository;
+    private LoginUserRepository userRepository;
 
     @Test
     public void testGetUserList() {
@@ -41,28 +42,29 @@ public class UserServiceImplTests {
 //	//stubbing
 //	// 测试桩
 //	Mockito.when(user.getId()).thenReturn(1L);
-	User user = new User();
-	user.setId(1L);
+        LoginUser user = new LoginUser();
+        user.setId(new LoginUserId());
+        user.getId().setId(1L);
 	user.setUserName("テストユーザ");
 	user.setPassword("pwd");
 	user.setAge(30);
 	UserForm form = new UserForm(user);
 	userServiceImpl.save(form);
 
-	User user2 = userRepository.findById(1L);
+	LoginUser user2 = userRepository.findById(1L);
 	Assert.assertEquals(user, user2);
     }
 
     @Test
     public void testEdit() {
-	User user = Mockito.mock(User.class);
+        LoginUser user = Mockito.mock(LoginUser.class);
 	   UserForm form = new UserForm(user);
 	userServiceImpl.edit(form);
 	fail("Not yet implemented");
     }
     @Test
     public void testDelete() {
-	User user = Mockito.mock(User.class);
+        LoginUser user = Mockito.mock(LoginUser.class);
     UserForm form = new UserForm(user);
 	userServiceImpl.delete(form);
 	fail("Not yet implemented");

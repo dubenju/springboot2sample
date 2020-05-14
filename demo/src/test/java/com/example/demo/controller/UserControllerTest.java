@@ -25,8 +25,9 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import com.example.demo.entity.User;
-import com.example.demo.repository.UserRepository;
+import com.example.demo.entity.LoginUser;
+import com.example.demo.entity.pk.LoginUserId;
+import com.example.demo.repository.LoginUserRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -35,7 +36,7 @@ public class UserControllerTest {
     @Autowired
     private WebApplicationContext webApplicationContext;
     @Autowired
-    private UserRepository userRepository;
+    private LoginUserRepository userRepository;
 
     private MockMvc mockMvc;
 
@@ -127,10 +128,11 @@ public class UserControllerTest {
     public void test_004_Add_001() {
         System.out.println("test_004_Add_001 begin");
         try {
-            User user = new User();
-            user.setId(2L);
-            Example<User> example = Example.of(user);
-            List<User> users = userRepository.findAll(example);
+            LoginUser user = new LoginUser();
+            user.setId(new LoginUserId());
+            user.getId().setId(2L);
+            Example<LoginUser> example = Example.of(user);
+            List<LoginUser> users = userRepository.findAll(example);
             if (users != null && users.size() > 0) {
                 userRepository.deleteInBatch(users);
             }
@@ -150,10 +152,11 @@ public class UserControllerTest {
             assertEquals(mvcResult.getModelAndView().getViewName(), "redirect:/list");
             
             // 画面出力チェック
-            user.setId(2L);
+            //user.setId(new LoginUserId());
+            user.getId().setId(2L);
             users = userRepository.findAll(example);
             assertTrue(users.size() == 1);
-            User user2 = users.get(0);
+            LoginUser user2 = users.get(0);
             assertEquals(user2.getUserName(), "2");
             assertEquals(user2.getPassword(), "2");
             assertEquals(user2.getAge(), Integer.valueOf(2));
@@ -172,10 +175,11 @@ public class UserControllerTest {
     public void test_004_Add_999() {
         System.out.println("test_004_Add begin");
         try {
-            User user = new User();
-            user.setId(2L);
-            Example<User> example = Example.of(user);
-            List<User> users = userRepository.findAll(example);
+            LoginUser user = new LoginUser();
+            user.setId(new LoginUserId());
+            user.getId().setId(2L);
+            Example<LoginUser> example = Example.of(user);
+            List<LoginUser> users = userRepository.findAll(example);
             if (users != null && users.size() > 0) {
                 userRepository.deleteInBatch(users);
             }
@@ -195,10 +199,11 @@ public class UserControllerTest {
             assertEquals(mvcResult.getModelAndView().getViewName(), "redirect:/list");
             
             // 画面出力チェック
-            user.setId(2L);
+            //user.setId(new LoginUserId());
+            user.getId().setId(2L);
             users = userRepository.findAll(example);
             assertTrue(users.size() == 1);
-            User user2 = users.get(0);
+            LoginUser user2 = users.get(0);
             assertEquals(user2.getUserName(), "2");
             assertEquals(user2.getPassword(), "2");
             assertEquals(user2.getAge(), Integer.valueOf(2));
