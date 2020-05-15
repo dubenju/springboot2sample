@@ -35,10 +35,16 @@ public class LoginUser {
     private String userName;
 
     @Column(nullable = false)
+    private String email;
+
+    @Column(nullable = false)
     private String password;
 
     @Column(nullable = false)
     private Integer age;
+
+    @Column
+    private String roles;
 
     @Override
     public boolean equals(Object obj) {
@@ -50,9 +56,11 @@ public class LoginUser {
         }
         LoginUser o = (LoginUser) obj;
 
-        return o.id == this.id &&
+        return o.id.equals(this.id) &&
         StringUtils.equals(o.userName, this.userName) &&
+        StringUtils.equals(o.email, this.email) &&
         StringUtils.equals(o.password, this.password) &&
+        StringUtils.equals(o.roles, this.roles) &&
         o.age.equals(this.age);
     }
 }

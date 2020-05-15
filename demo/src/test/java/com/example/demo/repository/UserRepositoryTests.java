@@ -35,7 +35,7 @@ public class UserRepositoryTests {
     @PersistenceContext
     private EntityManager entityManager;
     
-    private LoginUser user = new LoginUser(new LoginUserId(1L), "admin", "123", 1);;
+    private LoginUser user = new LoginUser(new LoginUserId(1L), "admin", "e", "123", 1, "r");
     private LoginUser userName = new LoginUser();;
     private Example<LoginUser> example = Example.of(user);
     private Example<LoginUser> exampleName = Example.of(userName);
@@ -93,7 +93,7 @@ public class UserRepositoryTests {
         // userRepository.deleteById(user);
         // org.springframework.data.jpa.repository.support.SimpleJpaRepository
         // when delete data is not exist, Exception
-        userRepository.deleteById(user.getId().getId());
+        userRepository.deleteById(user.getId());
     }
 
 
@@ -104,7 +104,7 @@ public class UserRepositoryTests {
     public void test_003_findById_001() {
         logger.info("test_003_findById_001");
         logger.info("【予想】SELECT * FROM USER WHERE ID=?;");
-        LoginUser bef = userRepository.findById(user.getId().getId());
+        LoginUser bef = userRepository.findById(user.getId()).get();
         Assert.assertNull(bef);
         logger.info("【予想】SELECT * FROM USER WHERE ID=?;");
         List<LoginUser> findAll = userRepository.findAll(this.example);
@@ -126,7 +126,7 @@ public class UserRepositoryTests {
         boolean bExists2 = userRepository.exists(exampleName);
         Assert.assertFalse(bExists2);
         logger.info("【予想】SELECT COUNT(*) FROM USER WHERE ID=?;");
-        boolean bExists = userRepository.existsById(user.getId().getId());
+        boolean bExists = userRepository.existsById(user.getId());
         Assert.assertFalse(bExists);
     }
 
@@ -160,7 +160,7 @@ public class UserRepositoryTests {
         logger.info("test_006_findById_002");
         logger.info("【予想】SELECT * FROM USER WHERE ID = ?;");
         /* exists existsById findById findAll findOne getOne */
-        LoginUser aft = userRepository.findById(user.getId().getId());
+        LoginUser aft = userRepository.findById(user.getId()).get();
         Assert.assertNotNull(aft);
         Assert.assertEquals(aft, user);
         Assert.assertTrue(aft.equals(user));
@@ -189,7 +189,7 @@ public class UserRepositoryTests {
         boolean bExists2 = userRepository.exists(exampleName);
         Assert.assertFalse(bExists2);
         logger.info("【予想】SELECT COUNT(*) FROM USER WHERE ID=?;");
-        boolean bExists = userRepository.existsById(user.getId().getId());
+        boolean bExists = userRepository.existsById(user.getId());
         Assert.assertTrue(bExists);
     }
 
@@ -199,7 +199,7 @@ public class UserRepositoryTests {
     @Test
     public void test_008_save_002() {
         logger.info("test_008_save_002");
-        LoginUser user2 = new LoginUser(new LoginUserId(1L), "administrator", "admin", 23);
+        LoginUser user2 = new LoginUser(new LoginUserId(1L), "administrator", "e", "admin", 23, "r");
         logger.info("test save");
         logger.info(user2.toString());
         // upsert
@@ -227,13 +227,13 @@ public class UserRepositoryTests {
         /* delete deleteById deleteInBatch deleteAllInBatch deleteAll */
         userRepository.delete(user);
         logger.info("【予想】SELECT * FROM USER WHERE ID = ?;");
-        LoginUser aftDel = userRepository.findById(user.getId().getId());
+        LoginUser aftDel = userRepository.findById(user.getId()).get();
         Assert.assertNull(aftDel);
         logger.info("【予想】DELETE FROM USER WHERE ;");
         // userRepository.deleteById(user);
         // org.springframework.data.jpa.repository.support.SimpleJpaRepository
         // when delete data is not exist, Exception
-        userRepository.deleteById(user.getId().getId());
+        userRepository.deleteById(user.getId());
     }
 
     /**

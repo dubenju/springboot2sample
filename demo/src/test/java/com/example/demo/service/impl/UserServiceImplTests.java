@@ -51,7 +51,7 @@ public class UserServiceImplTests {
 	UserForm form = new UserForm(user);
 	userServiceImpl.save(form);
 
-	LoginUser user2 = userRepository.findById(1L);
+	LoginUser user2 = userRepository.findById(new LoginUserId(1L)).get();
 	Assert.assertEquals(user, user2);
     }
 

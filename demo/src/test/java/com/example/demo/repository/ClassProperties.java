@@ -9,7 +9,7 @@ import com.example.demo.entity.pk.LoginUserId;
 public class ClassProperties {
 
     public static void main(String[] args) {
-        LoginUser user = new LoginUser(new LoginUserId(1L), "admin", "123", 1);
+        LoginUser user = new LoginUser(new LoginUserId(1L), "admin", "e", "123", 1, "r");
         ClassProperties.getProperties(user);
     }
 

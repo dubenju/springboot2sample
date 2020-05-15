@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.bean.UserForm;
 import com.example.demo.entity.LoginUser;
+import com.example.demo.entity.pk.LoginUserId;
 import com.example.demo.repository.LoginUserRepository;
 import com.example.demo.service.UserService;
 
@@ -30,7 +31,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserForm findUserById(long id) {
-        LoginUser user =  userRepository.findById(id);
+        LoginUser user =  userRepository.findById(new LoginUserId(id)).get();
         UserForm res = new UserForm(user);
         return res;
     }
