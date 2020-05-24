@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="initial-scale=1.0, target-densitydpi=device-dpi" /><!-- this is for mobile (Android) Chrome -->
+<meta name="viewport" content="initial-scale=1.0, width=device-height"><!--  mobile Safari, FireFox, Opera Mobile  -->
+<script src="../libs/modernizr.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../libs/flashcanvas.js"></script>
+<![endif]-->
+<style type="text/css">
+    div {
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+    input {
+        padding: .5em;
+        margin: .5em;
+    }
+    select {
+        padding: .5em;
+        margin: .5em;
+    }
+
+    #signatureparent {
+        /* color:darkblue; */
+        color:black;
+        /* background-color:darkgrey; */
+        background-color:#008080;
+        /*max-width:600px;*/
+        /* padding:20px; 枠 */
+        padding:10px;
+    }
+
+    /*This is the div within which the signature canvas is fitted*/
+    #signature {
+        display: grid;
+        /* border: 2px dotted black;*/
+        border: 2px solid black;
+        /* background-color:lightgrey; */
+        background-color:#c0ebd7;
+    background-image: 
+        linear-gradient(to bottom, transparent 95%, white 95%),
+        linear-gradient(to right, transparent 95%, white 95%),
+        linear-gradient(to top, transparent 95%, w hite 95%),
+        linear-gradient(to left, transparent 95%, white 95%);
+    background-size: 1em 1em;
+    background-repeat: repeat, repeat, repeat-x, repeat-y;
+
+
+
+    }
+
+    /* Drawing the 'gripper' for touch-enabled devices */ 
+    html.touch #content {
+        float:left;
+        width:92%;
+    }
+    html.touch #scrollgrabber {
+        float:right;
+        width:4%;
+        margin-right:2%;
+        background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAFCAAAAACh79lDAAAAAXNSR0IArs4c6QAAABJJREFUCB1jmMmQxjCT4T/DfwAPLgOXlrt3IwAAAABJRU5ErkJggg==)
+    }
+    html.borderradius #scrollgrabber {
+        border-radius: 1em;
+    }
+
+/*控制器 border:1px solid #000; */
+#controller{
+    text-align: center;height:34px;line-height:34px
+}
+#controller>div{
+    display: inline-block; width: 30px; height: 30px;  border: gray 2px solid;
+}
+#black{
+    background: black;
+}
+#red{
+    background: red;
+}
+#green{
+    background: green;
+}
+#yellow{
+    background: yellow;
+}
+#purple{
+    background: purple;
+}
+#orange{
+    background: orange;
+}
+#blue{
+    background: blue;
+}
+#indigo{
+    background: indigo;
+}
+#controller>div.on{
+    border-color: red;
+}
+#reset{
+    vertical-align: top; width: 56px;  height: 34px;
+}
+</style>
+</head>
+<body>
+
+<div>
+<div id="content">
+    <div id="signatureparent">
+        <div id="controller">
+            <div id="black" class="on"></div>
+			    <div id="red"></div>
+			    <div id="green"></div>
+			    <div id="yellow"></div>
+			    <div id="purple"></div>
+			    <div id="orange"></div>
+			    <div id="blue"></div>
+			    <div id="indigo"></div>
+			    <button id="reset">クリア</button>
+        </div>
+        <div id="signature"></div></div>
+    <div id="tools"></div>
+    <div><div id="displayarea"></div></div>
+</div>
+
+<div id="scrollgrabber"></div>
+</div>
+
+<script src="../libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+console.log($().jquery);
+console.log($.fn.jquery);
+jQuery.noConflict()
+</script>
+<script>
+(function($) {
+    var topics = {};
+    $.publish = function(topic, args) {
+        if (topics[topic]) {
+            var currentTopic = topics[topic],
+            args = args || {};
+    
+            for (var i = 0, j = currentTopic.length; i < j; i++) {
+                currentTopic[i].call($, args);
+            }
+        }
+    };
+    $.subscribe = function(topic, callback) {
+        if (!topics[topic]) {
+            topics[topic] = [];
+        }
+        topics[topic].push(callback);
+        return {
+            "topic": topic,
+            "callback": callback
+        };
+    };
+    $.unsubscribe = function(handle) {
+        var topic = handle.topic;
+        if (topics[topic]) {
+            var currentTopic = topics[topic];
+    
+            for (var i = 0, j = currentTopic.length; i < j; i++) {
+                if (currentTopic[i] === handle.callback) {
+                    currentTopic.splice(i, 1);
+                }
+            }
+        }
+    };
+})(jQuery);
+</script>
+
+<script src="../libs/jSignature/2.1.3/jSignature.min.noconflict.js"></script>
+<!-- <script src="../libs/jSignature/2.1.3/jSignature.js"></script> -->
+<script>
+(function($){
+$(document).ready(function() {
+	console.log($().jquery);
+	console.log($.fn.jquery);
+    // This is the part where jSignature is initialized.
+    // , 'decor-color': '#00FF00', 'signatureLine':true
+    var $sigdiv = $("#signature").jSignature({'UndoButton':true, 'lineWidth':8})
+    // All the code below is just code driving the demo. 
+    , $tools = $('#tools')
+    , $extraarea = $('#displayarea')
+    , pubsubprefix = 'jSignature.demo.'
+    , $signtools = $('signatureTools')
+/*
+    var export_plugins = $sigdiv.jSignature('listPlugins','export')
+    , chops = ['<span><b>出力Extract signature data as: </b></span><select>','<option value="">(select export format)</option>']
+    , name
+    for(var i in export_plugins){
+        if (export_plugins.hasOwnProperty(i)){
+            name = export_plugins[i]
+            console.log(name);
+            chops.push('<option value="' + name + '">' + name + '</option>')
+        }
+    }
+    chops.push('</select><span><b> 或いは: </b></span>')
+
+    $(chops.join('')).bind('change', function(e){
+        if (e.target.value !== ''){
+            var data = $sigdiv.jSignature('getData', e.target.value)
+            $.publish(pubsubprefix + 'formatchanged')
+            if (typeof data === 'string'){
+                $('textarea', $tools).val(data)
+            } else if($.isArray(data) && data.length === 2){
+                $('textarea', $tools).val(data.join(','))
+                $.publish(pubsubprefix + data[0], data);
+            } else {
+                try {
+                    $('textarea', $tools).val(JSON.stringify(data))
+                } catch (ex) {
+                    $('textarea', $tools).val('Not sure how to stringify this, likely binary, format.')
+                }
+            }
+        }
+    }).appendTo($tools)
+*/
+    // document.getElementById("signature").setAttribute('style', 'background-image: 100px : linear-gradient(to bottom, transparent 95%, white 95%),linear-gradient(to right, transparent 95%, white 95%),　linear-gradient(to top, transparent 95%, w hite 95%),background-size: 1em 1em;background-repeat: repeat, repeat, repeat-x, repeat-y;');
+
+    $('<input type="button" value="リセット">').bind('click', function(e){
+        $sigdiv.jSignature('reset')
+    }).appendTo($tools)
+
+    $('<input type="button" value="確定">').bind('click', function(e){
+        if( $("#signature").jSignature('getData', 'native').length === 0){
+            alert("请签名后再提交！");
+            return;
+        }
+        //var con=confirm("提交后不可更改，确认提交签名？");
+        // if(con===false) return;
+
+        //保存将签名的画布保存为base64编码字符串
+        var sig=$("#signature");
+        var datapair=sig.jSignature("getData","image");
+        // $("#img").attr("src","data:"+ datapair[0] + "," + datapair[1]);
+        console.log(datapair[1]);
+        // $("#img").attr("src","data:"+sig.jSignature('getData'));
+        // console.log(sig.jSignature("getData"));
+
+        $.publish(pubsubprefix + 'formatchanged')
+        if (typeof datapair === 'string'){
+            $('textarea', $tools).val(datapair)
+        } else if($.isArray(datapair) && datapair.length === 2){
+            $('textarea', $tools).val(datapair.join(','))
+            $.publish(pubsubprefix + datapair[0], datapair);
+        } else {
+            try {
+                $('textarea', $tools).val(JSON.stringify(datapair))
+            } catch (ex) {
+                $('textarea', $tools).val('Not sure how to stringify this, likely binary, format.')
+            }
+        }
+
+        //封装base64字符串，将其提交到后端
+        //var postData={};
+        //postData.imgStr=datapair[1];
+        //$.post("http://localhost:8099/SignatureSave",postData,function (data) {
+        //    alert(data);
+        //}
+
+    }).appendTo($tools)
+
+    $('<div><textarea style="width:100%;height:30px;"></textarea></div>').appendTo($tools)
+
+    $.subscribe(pubsubprefix + 'formatchanged', function(){
+        $extraarea.html('')
+    })
+
+    $.subscribe(pubsubprefix + 'image/png;base64', function(data) {
+        var i = new Image()
+        i.src = 'data:' + data[0] + ',' + data[1]
+        // $('<span><b>As you can see, one of the problems of "image" extraction (besides not working on some old Androids, elsewhere) is that it extracts A LOT OF DATA and includes all the decoration that is not part of the signature.</b></span>').appendTo($extraarea)
+        $(i).appendTo($extraarea)
+    });
+/*
+    $.subscribe(pubsubprefix + 'image/jsignature;base30', function(data) {
+        $('<span><b>This is a vector format not natively render-able by browsers. Format is a compressed "movement coordinates arrays" structure tuned for use server-side. The bonus of this format is its tiny storage footprint and ease of deriving rendering instructions in programmatic, iterative manner.</b></span>').appendTo($extraarea)
+    });
+*/
+    if (Modernizr.touch){
+        $('#scrollgrabber').height($('#content').height())
+    }
+
+    $('#controller').bind('click', function(e){
+        var target = event.target;
+        if(target.nodeName.toLowerCase() == 'div'){
+            //移除其他标签的class
+            document.querySelector('.on').className = '';
+
+            target.className += ' on';
+            console.log($(target).css("background-color"));
+            $("#signature").jSignature("updateSetting", "color", $(target).css("background-color"), true);
+        }
+        else if(target.id == 'reset'){
+            document.querySelector('.on').className = '';
+            document.getElementById("black").className += ' on';
+            console.log($('#black').css("background-color"));
+            $("#signature").jSignature("updateSetting", "color", $('#black').css("background-color"), true);
+        }
+    });
+
+    $("#signature").bind("change", function(event) {
+        var data = $("#signature").jSignature("getData", "native");
+
+        if (!data.length) {
+          //self.$emit("change-signature", null);
+          return;
+        }
+
+        var formattedData = $("#signature").jSignature("getData", "image");
+        $.publish(pubsubprefix + 'formatchanged')
+        if (typeof formattedData === 'string'){
+            $('textarea', $tools).val(datapformattedDataair)
+        } else if($.isArray(formattedData) && formattedData.length === 2){
+            $('textarea', $tools).val(formattedData.join(','))
+            $.publish(pubsubprefix + formattedData[0], formattedData);
+        } else {
+            try {
+                $('textarea', $tools).val(JSON.stringify(formattedData))
+            } catch (ex) {
+                $('textarea', $tools).val('Not sure how to stringify this, likely binary, format.')
+            }
+        }
+      });
+    
+    //获取 context 对象
+    var canvas = $("#signature").find('canvas.jSignature')
+    .add($("#signature").filter('canvas.jSignature'))
+    .data('jSignature.this');
+    var context2D = canvas.canvasContext;
+    context2D.fillStyle = "#F00";
+    context2D.fillRect(0,0,800,600);
+    
+    for(var i=10+0.5;i< 1860;i+=10){
+                context2D.beginPath();
+                context2D.lineWidth = 1;
+                context2D.strokeStyle = "black";
+                context2D.moveTo(i,0);
+                context2D.lineTo(i,470);
+                context2D.closePath();
+                context2D.stroke();
+    }
+    for(var i=10+0.5;i< 470;i+=10){
+            context2D.beginPath();
+            context2D.lineWidth = 1;
+            context2D.strokeStyle = "black";
+            context2D.moveTo(0,i);
+            context2D.lineTo(1860,i);
+            context2D.closePath();
+            context2D.stroke();
+    }
+    context2D.restore();
+    context2D.globalAlpha = 0.1;
+    
+})
+})(jQuery)
+</script>
+
+<!-- 
+<input type="color" id="fcolor">
+<script>
+(function($) {
+$('#fcolor').change(function() {
+    //使用前，清除现有笔迹，因为一次只允许使用一种颜色
+    $("#signature").jSignature("updateSetting", "color", $("#fcolor").val(), true);
+})
+})(jQuery)
+</script>
+ -->
+</body>
+</html>
