@@ -67,43 +67,43 @@
         border-radius: 1em;
     }
 
-/*控制器 border:1px solid #000; */
-#controller{
-    text-align: center;height:34px;line-height:34px
-}
-#controller>div{
-    display: inline-block; width: 30px; height: 30px;  border: gray 2px solid;
-}
-#black{
-    background: black;
-}
-#red{
-    background: red;
-}
-#green{
-    background: green;
-}
-#yellow{
-    background: yellow;
-}
-#purple{
-    background: purple;
-}
-#orange{
-    background: orange;
-}
-#blue{
-    background: blue;
-}
-#indigo{
-    background: indigo;
-}
-#controller>div.on{
-    border-color: red;
-}
-#reset{
-    vertical-align: top; width: 56px;  height: 34px;
-}
+    /*控制器 border:1px solid #000; */
+    #controller{
+        text-align: center;height:34px;line-height:34px
+    }
+    #controller>div{
+        display: inline-block; width: 30px; height: 30px;  border: gray 2px solid;
+    }
+    #black{
+        background: black;
+    }
+    #red{
+        background: red;
+    }
+    #green{
+        background: green;
+    }
+    #yellow{
+        background: yellow;
+    }
+    #purple{
+        background: purple;
+    }
+    #orange{
+        background: orange;
+    }
+    #blue{
+        background: blue;
+    }
+    #indigo{
+        background: indigo;
+    }
+    #controller>div.on{
+        border-color: red;
+    }
+    #reset{
+        vertical-align: top; width: 56px;  height: 34px;
+    }
 </style>
 </head>
 <body>
@@ -113,14 +113,14 @@
     <div id="signatureparent">
         <div id="controller">
             <div id="black" class="on"></div>
-			    <div id="red"></div>
-			    <div id="green"></div>
-			    <div id="yellow"></div>
-			    <div id="purple"></div>
-			    <div id="orange"></div>
-			    <div id="blue"></div>
-			    <div id="indigo"></div>
-			    <button id="reset">クリア</button>
+            <div id="red"></div>
+            <div id="green"></div>
+            <div id="yellow"></div>
+            <div id="purple"></div>
+            <div id="orange"></div>
+            <div id="blue"></div>
+            <div id="indigo"></div>
+            <button id="reset">クリア</button>
         </div>
         <div id="signature"></div></div>
     <div id="tools"></div>
@@ -130,11 +130,13 @@
 <div id="scrollgrabber"></div>
 </div>
 
-<script src="../libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="../libs/jQuery/1.7.1/jquery.js"></script> -->
+<script src="../libs/jQuery/1.12.4/jquery.min.js"></script>
+<!-- <script src="../libs/jQuery/3.5.1/jquery.min.js"></script> -->
 <script type="text/javascript">
-console.log($().jquery);
-console.log($.fn.jquery);
-jQuery.noConflict()
+    console.log($().jquery);
+    console.log($.fn.jquery);
+    jQuery.noConflict()
 </script>
 <script>
 (function($) {
@@ -143,7 +145,7 @@ jQuery.noConflict()
         if (topics[topic]) {
             var currentTopic = topics[topic],
             args = args || {};
-    
+
             for (var i = 0, j = currentTopic.length; i < j; i++) {
                 currentTopic[i].call($, args);
             }
@@ -163,7 +165,6 @@ jQuery.noConflict()
         var topic = handle.topic;
         if (topics[topic]) {
             var currentTopic = topics[topic];
-    
             for (var i = 0, j = currentTopic.length; i < j; i++) {
                 if (currentTopic[i] === handle.callback) {
                     currentTopic.splice(i, 1);
@@ -179,8 +180,8 @@ jQuery.noConflict()
 <script>
 (function($){
 $(document).ready(function() {
-	console.log($().jquery);
-	console.log($.fn.jquery);
+    console.log($().jquery);
+    console.log($.fn.jquery);
     // This is the part where jSignature is initialized.
     // , 'decor-color': '#00FF00', 'signatureLine':true
     var $sigdiv = $("#signature").jSignature({'UndoButton':true, 'lineWidth':8})
@@ -327,8 +328,8 @@ $(document).ready(function() {
                 $('textarea', $tools).val('Not sure how to stringify this, likely binary, format.')
             }
         }
-      });
-    
+    });
+
     //获取 context 对象
     var canvas = $("#signature").find('canvas.jSignature')
     .add($("#signature").filter('canvas.jSignature'))
@@ -336,24 +337,24 @@ $(document).ready(function() {
     var context2D = canvas.canvasContext;
     context2D.fillStyle = "#F00";
     context2D.fillRect(0,0,800,600);
-    
+
     for(var i=10+0.5;i< 1860;i+=10){
-                context2D.beginPath();
-                context2D.lineWidth = 1;
-                context2D.strokeStyle = "black";
-                context2D.moveTo(i,0);
-                context2D.lineTo(i,470);
-                context2D.closePath();
-                context2D.stroke();
+        context2D.beginPath();
+        context2D.lineWidth = 1;
+        context2D.strokeStyle = "black";
+        context2D.moveTo(i,0);
+        context2D.lineTo(i,470);
+        context2D.closePath();
+        context2D.stroke();
     }
     for(var i=10+0.5;i< 470;i+=10){
-            context2D.beginPath();
-            context2D.lineWidth = 1;
-            context2D.strokeStyle = "black";
-            context2D.moveTo(0,i);
-            context2D.lineTo(1860,i);
-            context2D.closePath();
-            context2D.stroke();
+        context2D.beginPath();
+        context2D.lineWidth = 1;
+        context2D.strokeStyle = "black";
+        context2D.moveTo(0,i);
+        context2D.lineTo(1860,i);
+        context2D.closePath();
+        context2D.stroke();
     }
     context2D.restore();
     context2D.globalAlpha = 0.1;

@@ -113,14 +113,14 @@
     <div id="signatureparent">
         <div id="controller">
             <div id="black" class="on"></div>
-            <div id="red"></div>
-            <div id="green"></div>
-            <div id="yellow"></div>
-            <div id="purple"></div>
-            <div id="orange"></div>
-            <div id="blue"></div>
-            <div id="indigo"></div>
-            <button id="reset">クリア</button>
+                <div id="red"></div>
+                <div id="green"></div>
+                <div id="yellow"></div>
+                <div id="purple"></div>
+                <div id="orange"></div>
+                <div id="blue"></div>
+                <div id="indigo"></div>
+                <button id="reset">クリア</button>
         </div>
         <div id="signature"></div></div>
     <div id="tools"></div>
@@ -130,9 +130,7 @@
 <div id="scrollgrabber"></div>
 </div>
 
-<!-- <script src="../libs/jQuery/1.7.1/jquery.js"></script> -->
-<script src="../libs/jQuery/1.12.4/jquery.min.js"></script>
-<!-- <script src="../libs/jQuery/3.5.1/jquery.min.js"></script> -->
+<script src="../libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript">
     console.log($().jquery);
     console.log($.fn.jquery);
