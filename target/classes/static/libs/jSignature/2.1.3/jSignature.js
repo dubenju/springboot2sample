@@ -767,9 +767,9 @@ function jSignatureClass(parent, options, instanceExtensions) {
     // these, when enabled, will hover above the sig area. Hence we append them to DOM before canvas.
     this.$controlbarUpper = (function(){
         var controlbarstyle = 'padding:0 !important; margin:0 !important;'+
-            'width: 100% !important; height: 0 !important; -ms-touch-action: none; touch-action: none;'+
+            'width: 100% !important; height: 100% !important; -ms-touch-action: none; touch-action: none;'+
             'margin-top:-1em !important; margin-bottom:1em !important;';
-        return $('<div style="'+controlbarstyle+'"></div>').appendTo($parent);
+        return $('<div style="border:1px solid #000;'+controlbarstyle+'"></div>').appendTo($parent);
     })();
 
     this.isCanvasEmulator = false; // will be flipped by initializer when needed.
@@ -1163,6 +1163,23 @@ jSignatureClass.prototype.initializeCanvas = function(settings) {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var GlobalJSignatureObjectInitializer = function(window){
 
     var globalEvents = new PubSubClass();
@@ -1182,14 +1199,12 @@ var GlobalJSignatureObjectInitializer = function(window){
 
         // jSignature knows how to resize its content when its parent is resized
         // window resize is the only way we can catch resize events though
-        $(window).bind('resize.'+apinamespace, function(){
+        $(window)
+        .bind('resize.'+apinamespace, function(){
             if (resizetimer) {
                 clearTimeout(resizetimer);
             }
-            resizetimer = setTimeout(
-                runner
-                , 500
-            );
+            resizetimer = setTimeout(runner, 500);
         })
         // when mouse exists canvas element and "up"s outside, we cannot catch it with
         // callbacks attached to canvas. This catches it outside.
@@ -1199,7 +1214,7 @@ var GlobalJSignatureObjectInitializer = function(window){
             )
         });
 
-    })(globalEvents, apinamespace, $, window)
+    })(globalEvents, apinamespace, $, window);
 
     var jSignatureInstanceExtensions = {
         /*
@@ -1486,6 +1501,11 @@ var GlobalJSignatureObjectInitializer = function(window){
 
 } // end of GlobalJSignatureObjectInitializer
 
+
+
+
+
 GlobalJSignatureObjectInitializer(window)
 
 })(jQuery);
+
