@@ -9,4 +9,8 @@ public class SignController {
     public String sign() {
         return "user/sign";
     }
+    @RequestMapping("/angular")
+    public String angular() {
+        return "AngularJS/20200612";
+    }
 }
