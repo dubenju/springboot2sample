@@ -17,6 +17,7 @@ public class TEST0001S01Controller extends TEST0001Controller {
     protected String getWindowId() {
         return TEST0001S01_ID;
     }
+    // http://192.168.11.2:8081/TEST0001/TEST0001S01/index
     @RequestMapping(value = TEST0001S01_URL + "index", method = RequestMethod.GET)
     public String index(Model model, TEST0001S01Form form) {
         String chkRet = initCommon(model, form, WindowType.LIST);

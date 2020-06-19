@@ -13,6 +13,8 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
+import com.example.demo.common.filter.MDCInsertingServletFilter;
+import com.example.demo.config.DemoConfiguration.MyFilter;
 import com.example.demo.entity.Car;
 import com.example.demo.repository.CarRepository;
 
@@ -49,5 +51,24 @@ public class DemoApplication {
         bean.setOrder(Ordered.HIGHEST_PRECEDENCE);
         return bean;
     }
-
+    @Bean
+    public FilterRegistrationBean<MDCInsertingServletFilter> registerMDCInsertingServletFilter(
+            MDCInsertingServletFilter mdcInsertingServletFilter) {
+        FilterRegistrationBean<MDCInsertingServletFilter> registrationBean = new FilterRegistrationBean<MDCInsertingServletFilter>();
+        registrationBean.setFilter(mdcInsertingServletFilter);
+        registrationBean.addUrlPatterns("/*");
+        registrationBean.setName("MDCInsertingServletFilter");
+        registrationBean.setOrder(0);
+        return registrationBean;
+    }
+//    @Bean
+//    public FilterRegistrationBean<MyFilter> registerMyFilter(
+//            MyFilter myFilter) {
+//        FilterRegistrationBean<MyFilter> registrationBean = new FilterRegistrationBean<MyFilter>();
+//        registrationBean.setFilter(myFilter);
+//        registrationBean.addUrlPatterns("/*");
+//        registrationBean.setName("MyFilter");
+//        registrationBean.setOrder(2);
+//        return registrationBean;
+//    }
 }

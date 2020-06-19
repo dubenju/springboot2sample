@@ -20,4 +20,13 @@ public class IndexController {
     {
         return "index";
     }
+    @RequestMapping("/angular")
+    public String angular() {
+        return "AngularJS/20200612";
+    }
+    @RequestMapping("/testAngular.html")
+    public String testAngular()
+    {
+        return "testAngular";
+    }
 }

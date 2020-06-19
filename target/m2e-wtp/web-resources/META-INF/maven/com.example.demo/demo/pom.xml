@@ -225,6 +225,16 @@
     <groupId>org.springframework.data</groupId>
     <artifactId>spring-data-rest-core</artifactId>
 </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>angularjs</artifactId>
+            <version>1.8.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
 </dependencies>
 

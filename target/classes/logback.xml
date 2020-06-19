@@ -3,11 +3,12 @@
 <!-- scan:当此属性设置为true时，配置文件如果发生改变，将会被重新加载，默认值为true。 
      scanPeriod:设置监测配置文件是否有修改的时间间隔，如果没有给出时间单位，默认单位是毫秒。当scan为true时，此属性生效。默认的时间间隔为1分钟。
      debug:当此属性设置为true时，将打印出logback内部日志信息，实时查看logback运行状态。默认值为false。 -->
-<configuration scan="true" scanPeriod="60 seconds" debug="false">
+<configuration scan="true" scanPeriod="60 seconds" debug="true">
 
     <!-- 上下文变量设置,用来定义变量值,其中name的值是变量的名称，value的值时变量定义的值。
         通过<property>定义的值会被插入到logger上下文中。定义变量后，可以使“${}”来使用变量。 -->
     <property name="CONTEXT_NAME" value="logback-test" />
+    <property name="LOG_DIR" value="/web/logs/" />
 
     <!-- 上下文名称：<contextName>, 每个logger都关联到logger上下文，
         默认上下文名称为“default”。但可以使用<contextName>设置成其他名字，用于区分不同应用程序的记录。
@@ -22,9 +23,63 @@
         <!-- 对日志进行格式化。 -->
         <encoder>
             <pattern>
-                %d{yyyy-MM-dd HH:mm:ss.SSS,Asia/Tokyo}|%level|%class|%thread|%method|%line|%msg%n
+                %d{yyyy-MM-dd HH:mm:ss.SSS,Asia/Tokyo},%-5level,%class.%method:%line:[%X{req.remoteHost}] [%thread][%msg]%n
             </pattern>
         </encoder>
+    </appender>
+
+    <appender name="ControllerLog00" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/example_controller.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>${LOG_DIR}/example_controller.%i.log</FileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>31</maxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>100MB</maxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <Pattern>
+                ReqSeq:%X{sequence}\t%d{yyyy-MM-dd HH:mm:ss.SSS,Asia/Tokyo}\t%-5level\t%thread\t%class.%method:%line:%msg%n
+            </Pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ControllerLog01" class="com.example.demo.common.appender.MyAsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>8192</queueSize>
+        <neverBlock>true</neverBlock>
+        <maxFlushTime>10000</maxFlushTime>
+        <includeCallerData>true</includeCallerData>
+        <appender-ref ref="ControllerLog00" />
+    </appender>
+
+    <appender name="Filter00" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/example_filter.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>${LOG_DIR}/example_filter.%i.log</FileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>31</maxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>100MB</maxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <Pattern>
+                ReqSeq:%X{sequence}\t%d{yyyy-MM-dd HH:mm:ss.SSS,Asia/Tokyo}\t%-5level\t%thread\t%class.%method:%line:%msg%n
+            </Pattern>
+        </encoder>
+    </appender>
+
+    <appender name="Filter01" class="com.example.demo.common.appender.MyAsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>8192</queueSize>
+        <neverBlock>true</neverBlock>
+        <maxFlushTime>10000</maxFlushTime>
+        <includeCallerData>true</includeCallerData>
+        <appender-ref ref="Filter00" />
     </appender>
 
     <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
@@ -80,5 +135,10 @@
         additivity:是否向上级logger传递打印信息。默认是true。(这个logger的上级就是上面的root)
         <logger>可以包含零个或多个<appender-ref>元素，标识这个appender将会添加到这个logger。-->
     <logger name="logback.test" level="DEBUG" additivity="true"></logger>
-
+    <logger name="ControllerLog" level="INFO">
+        <appender-ref ref="ControllerLog01" />
+    </logger>
+    <logger name="FilterLog" level="INFO">
+        <appender-ref ref="Filter01" />
+    </logger>
 </configuration>
