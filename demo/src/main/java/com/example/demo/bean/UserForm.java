@@ -5,15 +5,21 @@ import javax.validation.constraints.NotBlank;
 import com.example.demo.entity.LoginUser;
 import com.example.demo.entity.pk.LoginUserId;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 @ToString
+@Builder(toBuilder = true)
+@EqualsAndHashCode
 public class UserForm {
 
     @NotBlank(message="IDは必須項目です。")
@@ -24,6 +30,7 @@ public class UserForm {
     private String age;
     private String roles;
 
+    
     public UserForm(LoginUser user) {
         this.id = Long.toString(user.getId().getId());
         this.userName = user.getUserName();

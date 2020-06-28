@@ -14,13 +14,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.bean.UserForm;
-import com.example.demo.service.UserService;
+import com.example.demo.service.IUserService;
 
 @Controller
 public class UserController {
 
     @Resource
-    UserService userService;
+    IUserService userService;
 
     @RequestMapping("/")
     public String index() {

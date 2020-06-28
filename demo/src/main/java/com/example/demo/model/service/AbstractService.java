@@ -3,9 +3,9 @@ package com.example.demo.model.service;
 import java.time.LocalDateTime;
 
 import com.example.demo.entity.CmnColumn;
-import com.example.demo.service.DateUtil;
-import com.example.demo.service.ExclusionException;
-import com.example.demo.service.ExclusionException.ExcluionType;
+import com.example.demo.exception.ExclusionException;
+import com.example.demo.exception.ExclusionException.ExcluionType;
+import com.example.demo.utils.DateUtil;
 
 public abstract class AbstractService {
     protected void checkExclusion(CmnColumn table, LocalDateTime updateDateTime, String tableName) {

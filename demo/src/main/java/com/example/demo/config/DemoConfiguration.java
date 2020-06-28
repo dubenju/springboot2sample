@@ -12,6 +12,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequestWrapper;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
@@ -23,6 +24,7 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import com.example.demo.DbjHttpServletRequestWrapper;
 import com.example.demo.DbjServletResponseWrapper;
 import com.example.demo.utils.UBytes;
 
@@ -57,7 +59,9 @@ public class DemoConfiguration {
         @Override
         public void doFilter(ServletRequest srequest, ServletResponse sresponse, FilterChain filterChain)
                 throws IOException, ServletException {
-            HttpServletRequest req = (HttpServletRequest) srequest;
+            HttpServletRequest httpServletRequest = (HttpServletRequest) srequest;
+            final HttpServletRequestWrapper req = new DbjHttpServletRequestWrapper(httpServletRequest);
+//            final String requestBody = req.toString();
             LOGGER.info("过滤器处理规则");
             LOGGER.info("********************************************************************************\n\n");
             System.out.println(MDC.get("sequence"));

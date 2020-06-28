@@ -6,12 +6,14 @@ package com.example.demo.entity;
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 import org.apache.commons.lang3.StringUtils;
 
 import com.example.demo.entity.pk.LoginUserId;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -26,12 +28,14 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
+@Builder(toBuilder = true)
 @Entity
+@Table(name="LOGIN_USER")
 public class LoginUser {
     @EmbeddedId
     private LoginUserId id;
 
-    @Column(nullable = false, unique = true)
+    @Column(name="USER_NAME", nullable = false, unique = true)
     private String userName;
 
     @Column(nullable = false)

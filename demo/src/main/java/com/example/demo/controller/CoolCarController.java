@@ -1,13 +1,20 @@
 package com.example.demo.controller;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.Car;
+import com.example.demo.exception.ResourceNotFoundException;
 import com.example.demo.repository.CarRepository;
 
 import java.util.Collection;
 import java.util.stream.Collectors;
+
+import javax.validation.Valid;
 
 @RestController
 public class CoolCarController {
@@ -30,5 +37,18 @@ public class CoolCarController {
                 !car.getName().equals("Triumph Stag") &&
                 !car.getName().equals("Ford Pinto") &&
                 !car.getName().equals("Yugo GV");
+    }
+    
+    @PostMapping("/cars")
+    public Car createCar(@Valid @RequestBody Car car) {
+        return repository.save(car);
+    }
+    
+    @GetMapping("/cars/{id}")
+    public ResponseEntity<Car> getCarById(@PathVariable(value = "id") Long carId)
+        throws ResourceNotFoundException {
+        Car car = repository.findById(carId)
+          .orElseThrow(() -> new ResourceNotFoundException("Car not found for this id :: " + carId));
+        return ResponseEntity.ok().body(car);
     }
 }
