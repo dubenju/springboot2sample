@@ -28,10 +28,11 @@ import com.example.demo.entity.LoginUser;
 import com.example.demo.entity.pk.LoginUserId;
 import com.example.demo.repository.LoginUserRepository;
 
+@SuppressWarnings("unused")
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @FixMethodOrder(value = MethodSorters.NAME_ASCENDING)
-public class UserServiceImplTests {
+public class UserServiceImplTest {
 
     private final static Long   TEST_ID        = 1L;
     private final static String TEST_USER_NAME = "test_userName";

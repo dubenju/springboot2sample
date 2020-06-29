@@ -9,16 +9,14 @@ import com.example.demo.repository2.second.CityRepository;
 import com.example.demo.service.ICityService;
 
 @Service
-public class CityService implements ICityService {
+public class CityServiceImpl implements ICityService {
 
     @Autowired
     private CityRepository repository;
 
     @Override
     public List<City> findAll() {
-
         List<City> cities = (List<City>) this.repository.findAll();
-
         return cities;
     }
 }
