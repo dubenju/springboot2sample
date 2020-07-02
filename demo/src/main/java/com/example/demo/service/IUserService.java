@@ -2,7 +2,7 @@ package com.example.demo.service;
 
 import java.util.List;
 
-import com.example.demo.bean.UserForm;
+import com.example.demo.controller.bean.UserForm;
 
 public interface IUserService {
     public List<UserForm> getUserList();

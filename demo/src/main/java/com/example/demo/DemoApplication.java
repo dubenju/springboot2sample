@@ -25,19 +25,20 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
-    @Bean
-    ApplicationRunner init(CarRepository repository) {
-        repository.deleteAll();
-        return args -> {
-            Stream.of("Ferrari", "Jaguar", "Porsche", "Lamborghini", "Bugatti",
-                      "AMC Gremlin", "Triumph Stag", "Ford Pinto", "Yugo GV").forEach(name -> {
-                Car car = new Car();
-                car.setName(name);
-                repository.save(car);
-            });
-            repository.findAll().forEach(System.out::println);
-        };
-    }
+//    @Bean
+//    ApplicationRunner init(CarRepository repository) {
+//        repository.deleteAll();
+//        return args -> {
+//            Stream.of("Ferrari", "Jaguar", "Porsche", "Lamborghini", "Bugatti",
+//                      "AMC Gremlin", "Triumph Stag", "Ford Pinto", "Yugo GV").forEach(name -> {
+//                Car car = new Car();
+//                car.setName(name);
+//                repository.save(car);
+//            });
+//            repository.findAll().forEach(System.out::println);
+//        };
+//    }
+
     @Bean
     public FilterRegistrationBean<CorsFilter> simpleCorsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
@@ -51,6 +52,7 @@ public class DemoApplication {
         bean.setOrder(Ordered.HIGHEST_PRECEDENCE);
         return bean;
     }
+
     @Bean
     public FilterRegistrationBean<MDCInsertingServletFilter> registerMDCInsertingServletFilter(
             MDCInsertingServletFilter mdcInsertingServletFilter) {
@@ -61,6 +63,7 @@ public class DemoApplication {
         registrationBean.setOrder(0);
         return registrationBean;
     }
+
 //    @Bean
 //    public FilterRegistrationBean<MyFilter> registerMyFilter(
 //            MyFilter myFilter) {

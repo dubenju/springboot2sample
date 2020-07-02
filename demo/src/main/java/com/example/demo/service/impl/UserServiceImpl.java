@@ -7,7 +7,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.bean.UserForm;
+import com.example.demo.controller.bean.UserForm;
 import com.example.demo.entity.LoginUser;
 import com.example.demo.entity.pk.LoginUserId;
 import com.example.demo.repository.LoginUserRepository;
