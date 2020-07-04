@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -43,12 +44,17 @@ public class CoolCarController {
     public Car createCar(@Valid @RequestBody Car car) {
         return repository.save(car);
     }
-    
+
     @GetMapping("/cars/{id}")
     public ResponseEntity<Car> getCarById(@PathVariable(value = "id") Long carId)
         throws ResourceNotFoundException {
         Car car = repository.findById(carId)
           .orElseThrow(() -> new ResourceNotFoundException("Car not found for this id :: " + carId));
         return ResponseEntity.ok().body(car);
+    }
+
+    @DeleteMapping("/cars/{id}")
+    public void deleteCar(@PathVariable(value = "id") Long carId) {
+        repository.deleteById(carId);
     }
 }

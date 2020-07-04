@@ -3,6 +3,7 @@ import java.io.IOException;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
@@ -10,6 +11,8 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.example.demo.DemoApplication;
+import com.example.demo.common.filter.MDCInsertingServletFilter;
+import com.example.demo.config.DemoConfiguration;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -24,7 +27,14 @@ public abstract class AbstractTest {
     WebApplicationContext webApplicationContext;
 
     protected void setUp() {
-       mvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
+        DemoApplication apl = new DemoApplication();
+        DemoConfiguration  conf = new DemoConfiguration();
+       mvc = MockMvcBuilders.webAppContextSetup(webApplicationContext)
+               .addFilters(new MDCInsertingServletFilter(), conf.new MyFilter())
+               .build();
+//       mockMvc = MockMvcBuilders.standaloneSetup(yourController) // 可添加多个Controller
+//               .addMappedInterceptors(new String[]{"/**"}, yourInterceptor)
+//               .addFilters(yourFilter).build();
     }
     protected String mapToJson(Object obj) throws JsonProcessingException {
        ObjectMapper objectMapper = new ObjectMapper();

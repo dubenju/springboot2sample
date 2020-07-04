@@ -1,6 +1,9 @@
 package com.example.demo;
 
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Stream;
 
 import org.springframework.boot.ApplicationRunner;
@@ -25,19 +28,33 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
-//    @Bean
-//    ApplicationRunner init(CarRepository repository) {
-//        repository.deleteAll();
-//        return args -> {
-//            Stream.of("Ferrari", "Jaguar", "Porsche", "Lamborghini", "Bugatti",
-//                      "AMC Gremlin", "Triumph Stag", "Ford Pinto", "Yugo GV").forEach(name -> {
-//                Car car = new Car();
-//                car.setName(name);
-//                repository.save(car);
-//            });
-//            repository.findAll().forEach(System.out::println);
-//        };
-//    }
+    @Bean
+    ApplicationRunner init(CarRepository repository) {
+        repository.deleteAll();
+        HashMap<String, Long> ids = new HashMap<String, Long>();
+        ids.put("Ferrari", 1L);
+        ids.put("Jaguar", 2L);
+        ids.put("Porsche", 3L);
+        ids.put("Lamborghini", 4L);
+        ids.put("Bugatti", 5L);
+        ids.put("AMC Gremlin", 6L);
+        ids.put("Triumph Stag", 7L);
+        ids.put("Ford Pinto", 8L);
+        ids.put("Yugo GV", 9L);
+
+        return args -> {
+            AtomicLong counter = new AtomicLong(0);
+            Stream.of("Ferrari", "Jaguar", "Porsche", "Lamborghini", "Bugatti",
+                      "AMC Gremlin", "Triumph Stag", "Ford Pinto", "Yugo GV").forEach(name -> {
+                Car car = new Car();
+//                car.setId(counter.getAndIncrement());
+                car.setId(ids.get(name));
+                car.setName(name);
+                repository.save(car);
+            });
+            repository.findAll().forEach(System.out::println);
+        };
+    }
 
     @Bean
     public FilterRegistrationBean<CorsFilter> simpleCorsFilter() {
