@@ -1,0 +1,271 @@
+
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.168] 
+[2020-06-29 07:03:55.176] Microsoft Windows [Version 10.0.18363.900]
+[2020-06-29 07:03:55.176] (c) 2019 Microsoft Corporation. All rights reserved.
+[2020-06-29 07:03:55.176] 
+[2020-06-29 07:03:55.176] benju@ASUS-PC C:\Users\benju>d:
+[2020-06-29 07:03:58.266] 
+[2020-06-29 07:03:58.266] benju@ASUS-PC D:\>cd prjredis     \redis
+[2020-06-29 07:04:10.183] 
+[2020-06-29 07:04:10.183] benju@ASUS-PC D:\prj\redis>where redis-cli
+[2020-06-29 07:04:26.891] Microsoft Windows [Version 10.0.18363.900]
+[2020-06-29 07:04:26.891] (c) 2019 Microsoft Corporation. All rights reserved.
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] benju@ASUS-PC C:\Users\benju>d:
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] benju@ASUS-PC D:\>cd prj\redis
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] benju@ASUS-PC D:\prj\redis>where redis-cli
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:26.891] 
+[2020-06-29 07:04:30.155] C:\Program Files\Redis\redis-cli.exe
+[2020-06-29 07:04:30.177] Microsoft Windows [Version 10.0.18363.900]
+[2020-06-29 07:04:30.177] (c) 2019 Microsoft Corporation. All rights reserved.
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:30.177] benju@ASUS-PC C:\Users\benju>d:
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:30.177] benju@ASUS-PC D:\>cd prj\redis
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:30.177] benju@ASUS-PC D:\prj\redis>where redis-cli
+[2020-06-29 07:04:30.177] C:\Program Files\Redis\redis-cli.exe
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:30.177] benju@ASUS-PC D:\prj\redis>
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:30.177] 
+[2020-06-29 07:04:33.251] redis-cli -v
+[2020-06-29 07:04:34.810] Microsoft Windows [Version 10.0.18363.900]
+[2020-06-29 07:04:34.810] (c) 2019 Microsoft Corporation. All rights reserved.
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:34.810] benju@ASUS-PC C:\Users\benju>d:
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:34.810] benju@ASUS-PC D:\>cd prj\redis
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:34.810] benju@ASUS-PC D:\prj\redis>where redis-cli
+[2020-06-29 07:04:34.810] C:\Program Files\Redis\redis-cli.exe
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:34.810] benju@ASUS-PC D:\prj\redis>redis-cli -v
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:34.810] 
+[2020-06-29 07:04:35.061] redis-cli 3.2.100
+[2020-06-29 07:04:35.075] Microsoft Windows [Version 10.0.18363.900]
+[2020-06-29 07:04:35.075] (c) 2019 Microsoft Corporation. All rights reserved.
+[2020-06-29 07:04:35.075] 
+[2020-06-29 07:04:35.075] benju@ASUS-PC C:\Users\benju>d:
+[2020-06-29 07:04:35.075] 
+[2020-06-29 07:04:35.075] benju@ASUS-PC D:\>cd prj\redis
+[2020-06-29 07:04:35.075] 
+[2020-06-29 07:04:35.075] benju@ASUS-PC D:\prj\redis>where redis-cli
+[2020-06-29 07:04:35.075] C:\Program Files\Redis\redis-cli.exe
+[2020-06-29 07:04:35.075] 
+[2020-06-29 07:04:35.075] benju@ASUS-PC D:\prj\redis>redis-cli -v
+[2020-06-29 07:04:35.075] redis-cli 3.2.100
+[2020-06-29 07:04:35.075] 
+[2020-06-29 07:04:35.075] benju@ASUS-PC D:\prj\redis>
+[2020-06-29 07:04:35.075] 
+[2020-06-29 07:04:35.075] 
+[2020-06-29 07:04:35.075] 
+[2020-06-29 07:04:35.075] 
+[2020-06-29 07:04:35.075] 
+[2020-06-29 07:04:35.075] 
+[2020-06-29 07:04:35.075] 
+[2020-06-29 07:04:35.075] 
+[2020-06-29 07:04:35.075] 
+[2020-06-29 07:04:53.127] redis-cli
+[2020-06-29 07:04:53.773] Microsoft Windows [Version 10.0.18363.900]
+[2020-06-29 07:04:53.773] (c) 2019 Microsoft Corporation. All rights reserved.
+[2020-06-29 07:04:53.773] 
+[2020-06-29 07:04:53.773] benju@ASUS-PC C:\Users\benju>d:
+[2020-06-29 07:04:53.773] 
+[2020-06-29 07:04:53.773] benju@ASUS-PC D:\>cd prj\redis
+[2020-06-29 07:04:53.773] 
+[2020-06-29 07:04:53.773] benju@ASUS-PC D:\prj\redis>where redis-cli
+[2020-06-29 07:04:53.773] C:\Program Files\Redis\redis-cli.exe
+[2020-06-29 07:04:53.773] 
+[2020-06-29 07:04:53.773] benju@ASUS-PC D:\prj\redis>redis-cli -v
+[2020-06-29 07:04:53.773] redis-cli 3.2.100
+[2020-06-29 07:04:53.773] 
+[2020-06-29 07:04:53.773] benju@ASUS-PC D:\prj\redis>redis-cli
+[2020-06-29 07:04:53.773] 
+[2020-06-29 07:04:53.773] 
+[2020-06-29 07:04:53.773] 
+[2020-06-29 07:04:53.773] 
+[2020-06-29 07:04:53.773] 
+[2020-06-29 07:04:53.773] 
+[2020-06-29 07:04:53.773] 
+[2020-06-29 07:04:53.773] 
+[2020-06-29 07:04:53.773] 
+[2020-06-29 07:04:53.777] 127.0.0.1:6379> 127.0.0.1:6379> k
+[2020-06-29 07:07:07.734] 127.0.0.1:6379> ke
+[2020-06-29 07:07:07.917] 127.0.0.1:6379> key
+[2020-06-29 07:07:08.997] 127.0.0.1:6379> keys pattern
+[2020-06-29 07:07:09.306] 127.0.0.1:6379> keys pattern
+[2020-06-29 07:07:11.557] 127.0.0.1:6379> keys *
+[2020-06-29 07:07:12.470] 127.0.0.1:6379> keys *
+[2020-06-29 07:07:12.470]  1) "spring:session:sessions:expires:bcf1eb4c-9ca0-4b3d-8c31-c7fd9205f30c"      
+[2020-06-29 07:07:12.470]  2) "spring:session:sessions:expires:7f578d70-e86d-426f-b514-5949481b7068"      
+[2020-06-29 07:07:12.470]  3) "spring:session:expirations:1593517620000"
+[2020-06-29 07:07:12.470]  4) "spring:session:sessions:expires:cc2b6e0e-fc13-42e3-8f2b-4e0ec0f61261"      
+[2020-06-29 07:07:12.470]  5) "spring:session:expirations:1593573300000"
+[2020-06-29 07:07:12.470]  6) "spring:session:sessions:expires:a0d4e5a1-8234-4629-a8b8-2bfc12c5a796"      
+[2020-06-29 07:07:12.470]  7) "spring:session:expirations:1593573420000"
+[2020-06-29 07:07:12.470]  8) "spring:session:sessions:5b643826-c29f-4c7e-8dad-d772e26bebf8"
+[2020-06-29 07:07:12.470]  9) "spring:session:expirations:1593476040000"
+[2020-06-29 07:07:12.470] 10) "spring:session:sessions:expires:e760d649-22ba-453f-bad9-e5ec3e9faba8"      
+[2020-06-29 07:07:12.470] 11) "spring:session:sessions:9e28b552-530f-4c22-8690-6e3b66f9db99"
+[2020-06-29 07:07:12.470] 12) "spring:session:expirations:1593569100000"
+[2020-06-29 07:07:12.470] 13) "spring:session:sessions:expires:562d38e5-effc-4dad-a209-3a698c44dabd"      
+[2020-06-29 07:07:12.477] 14) "spring:session:sessions:expires:1e176825-35d2-44a3-9b68-ea0b907bed17"      
+[2020-06-29 07:07:12.477] 15) "spring:session:sessions:expires:9e28b552-530f-4c22-8690-6e3b66f9db99"      
+[2020-06-29 07:07:12.477] 16) "spring:session:sessions:expires:0827e241-e630-49b4-af42-00cae3815ab5"      
+[2020-06-29 07:07:12.477] 17) "spring:session:sessions:35d23985-644d-487b-b41f-1f01097b334a"
+[2020-06-29 07:07:12.477] 18) "spring:session:expirations:1593573360000"
+[2020-06-29 07:07:12.477] 19) "spring:session:sessions:0827e241-e630-49b4-af42-00cae3815ab5"
+[2020-06-29 07:07:12.477] 20) "spring:session:expirations:1593432540000"
+[2020-06-29 07:07:12.477] 21) "spring:session:sessions:bcf1eb4c-9ca0-4b3d-8c31-c7fd9205f30c"
+[2020-06-29 07:07:12.477] 22) "spring:session:sessions:expires:67d38a29-0bbe-4591-9c39-8b45e2cfc8ed"      
+[2020-06-29 07:07:12.477] 23) "spring:session:sessions:7dc73326-1ba5-4320-991d-8190b77de539"
+[2020-06-29 07:07:12.477] 24) "spring:session:sessions:faccaeb7-f92a-446b-8538-934440790c25"
+[2020-06-29 07:07:12.477] 25) "spring:session:sessions:expires:a9c9cd7f-aad4-499c-99b2-b2e1895e7b40"      
+[2020-06-29 07:07:12.486] 26) "spring:session:sessions:79c00c56-0116-4deb-ba57-bc2d987f0b99"
+[2020-06-29 07:07:12.486] 27) "spring:session:sessions:eb40f5aa-412d-4bee-a986-c4740e5fca20"
+[2020-06-29 07:07:12.486] 28) "spring:session:sessions:1ecf55d6-d946-46ef-8e64-41aa9216d720"
+[2020-06-29 07:07:12.486] 29) "spring:session:expirations:1593567120000"
+[2020-06-29 07:07:12.486] 30) "spring:session:sessions:expires:79c00c56-0116-4deb-ba57-bc2d987f0b99"      
+[2020-06-29 07:07:12.486] 31) "spring:session:sessions:7c7ce573-d0a0-4680-9443-06bda80eca5b"
+[2020-06-29 07:07:12.486] 32) "spring:session:sessions:96e8d439-406b-41c9-af2f-ac5bedfef761"
+[2020-06-29 07:07:12.486] 33) "spring:session:sessions:562d38e5-effc-4dad-a209-3a698c44dabd"
+[2020-06-29 07:07:12.486] 34) "spring:session:expirations:1593568020000"
+[2020-06-29 07:07:12.486] 35) "spring:session:sessions:expires:0947206f-b680-46d8-aef8-48010f76a93f"      
+[2020-06-29 07:07:12.486] 36) "spring:session:sessions:bf9c5c30-d51d-4f6e-813d-c1f183905d9b"
+[2020-06-29 07:07:12.486] 37) "spring:session:expirations:1593567540000"
+[2020-06-29 07:07:12.492] 38) "spring:session:sessions:a9c9cd7f-aad4-499c-99b2-b2e1895e7b40"
+[2020-06-29 07:07:12.492] 39) "spring:session:sessions:67d38a29-0bbe-4591-9c39-8b45e2cfc8ed"
+[2020-06-29 07:07:12.492] 40) "spring:session:expirations:1593567600000"
+[2020-06-29 07:07:12.492] 41) "spring:session:sessions:expires:1ecf55d6-d946-46ef-8e64-41aa9216d720"      
+[2020-06-29 07:07:12.492] 42) "spring:session:sessions:expires:eb40f5aa-412d-4bee-a986-c4740e5fca20"      
+[2020-06-29 07:07:12.492] 43) "spring:session:sessions:48e767fc-daa9-481d-90ef-13c7f7b1b33b"
+[2020-06-29 07:07:12.492] 44) "test"
+[2020-06-29 07:07:12.492] 45) "spring:session:sessions:7f578d70-e86d-426f-b514-5949481b7068"
+[2020-06-29 07:07:12.492] 46) "spring:session:sessions:expires:7dc73326-1ba5-4320-991d-8190b77de539"      
+[2020-06-29 07:07:12.492] 47) "spring:session:sessions:expires:dc5af8bf-5a2b-4cb2-a9d4-d927ff858e1a"      
+[2020-06-29 07:07:12.492] 48) "spring:session:sessions:bcd30869-5bd5-4fcc-902f-f3a4d7699854"
+[2020-06-29 07:07:12.492] 49) "spring:session:sessions:a827538d-bf19-4393-aa7e-fcd0ae04fd3e"
+[2020-06-29 07:07:12.501] 50) "spring:session:sessions:32e16216-2b7b-4983-8bdb-ed7e98bfb8e7"
+[2020-06-29 07:07:12.501] 51) "testkey1"
+[2020-06-29 07:07:12.501] 52) "spring:session:sessions:expires:35d23985-644d-487b-b41f-1f01097b334a"      
+[2020-06-29 07:07:12.501] 53) "spring:session:sessions:b33a7ce3-fbcd-4d1d-8cdf-3575760d924c"
+[2020-06-29 07:07:12.501] 54) "spring:session:sessions:expires:9df206a5-eab5-45f0-9e64-a2839015ceb4"      
+[2020-06-29 07:07:12.501] 55) "spring:session:sessions:expires:bcd30869-5bd5-4fcc-902f-f3a4d7699854"      
+[2020-06-29 07:07:12.501] 56) "spring:session:sessions:expires:1c0b88a7-cb1d-49eb-a03b-de655962656f"      
+[2020-06-29 07:07:12.501] 57) "spring:session:sessions:a0d4e5a1-8234-4629-a8b8-2bfc12c5a796"
+[2020-06-29 07:07:12.501] 58) "spring:session:sessions:9fa81d2c-7503-4728-88c2-813b9a5e85a2"
+[2020-06-29 07:07:12.501] 59) "spring:session:sessions:expires:96e8d439-406b-41c9-af2f-ac5bedfef761"      
+[2020-06-29 07:07:12.501] 60) "spring:session:expirations:1593567900000"
+[2020-06-29 07:07:12.501] 61) "spring:session:sessions:expires:6877362e-97ab-4ccb-af26-e796a6845849"      
+[2020-06-29 07:07:12.507] 62) "spring:session:sessions:expires:9fa81d2c-7503-4728-88c2-813b9a5e85a2"      
+[2020-06-29 07:07:12.507] 63) "spring:session:sessions:expires:a827538d-bf19-4393-aa7e-fcd0ae04fd3e"      
+[2020-06-29 07:07:12.507] 64) "spring:session:sessions:expires:bf9c5c30-d51d-4f6e-813d-c1f183905d9b"
+[2020-06-29 07:07:12.507] 65) "spring:session:sessions:1e176825-35d2-44a3-9b68-ea0b907bed17"
+[2020-06-29 07:07:12.507] 66) "spring:session:sessions:0947206f-b680-46d8-aef8-48010f76a93f"
+[2020-06-29 07:07:12.507] 67) "spring:session:sessions:99ddae8a-020c-42d9-a851-5eb216bc54d9"
+[2020-06-29 07:07:12.507] 68) "spring:session:sessions:expires:5b643826-c29f-4c7e-8dad-d772e26bebf8"      
+[2020-06-29 07:07:12.507] 69) "spring:session:sessions:e760d649-22ba-453f-bad9-e5ec3e9faba8"
+[2020-06-29 07:07:12.507] 70) "spring:session:sessions:expires:7c7ce573-d0a0-4680-9443-06bda80eca5b"      
+[2020-06-29 07:07:12.507] 71) "spring:session:expirations:1593567840000"
+[2020-06-29 07:07:12.507] 72) "spring:session:sessions:cc2b6e0e-fc13-42e3-8f2b-4e0ec0f61261"
+[2020-06-29 07:07:12.512] 73) "spring:session:sessions:9df206a5-eab5-45f0-9e64-a2839015ceb4"
+[2020-06-29 07:07:12.512] 74) "spring:session:sessions:expires:b33a7ce3-fbcd-4d1d-8cdf-3575760d924c"      
+[2020-06-29 07:07:12.512] 75) "spring:session:sessions:expires:48e767fc-daa9-481d-90ef-13c7f7b1b33b"      
+[2020-06-29 07:07:12.512] 76) "spring:session:expirations:1593569160000"
+[2020-06-29 07:07:12.512] 77) "spring:session:sessions:expires:faccaeb7-f92a-446b-8538-934440790c25"      
+[2020-06-29 07:07:12.512] 78) "spring:session:sessions:dc5af8bf-5a2b-4cb2-a9d4-d927ff858e1a"
+[2020-06-29 07:07:12.512] 79) "spring:session:expirations:1593429060000"
+[2020-06-29 07:07:12.512] 80) "spring:session:sessions:6877362e-97ab-4ccb-af26-e796a6845849"
+[2020-06-29 07:07:12.512] 81) "spring:session:sessions:expires:32e16216-2b7b-4983-8bdb-ed7e98bfb8e7"      
+[2020-06-29 07:07:12.512] 82) "spring:session:sessions:expires:99ddae8a-020c-42d9-a851-5eb216bc54d9"      
+[2020-06-29 07:07:12.512] 83) "spring:session:sessions:1c0b88a7-cb1d-49eb-a03b-de655962656f"
+[2020-06-29 07:07:12.512] 127.0.0.1:6379>127.0.0.1:6379> g127.0.0.1:6379> ge127.0.0.1:6379> get key127.0.0.1:6379> get key127.0.0.1:6379> get t127.0.0.1:6379> get te127.0.0.1:6379> get tes127.0.0.1:6379> get test127.0.0.1:6379> get test
+[2020-06-29 07:07:40.153] "\"p\""
+[2020-06-29 07:07:40.157] 127.0.0.1:6379>127.0.0.1:6379> g127.0.0.1:6379> ge127.0.0.1:6379> get key127.0.0.1:6379> get key127.0.0.1:6379> get testkey1127.0.0.1:6379> get testkey1
+[2020-06-29 07:07:52.892] "value1"
+[2020-06-29 07:07:52.897] 127.0.0.1:6379>127.0.0.1:6379> e127.0.0.1:6379> ex127.0.0.1:6379> exi127.0.0.1:6379> exit127.0.0.1:6379> exit
+[2020-06-29 16:34:16.672] 66) "spring:session:sessions:0947206f-b680-46d8-aef8-48010f76a93f"
+[2020-06-29 16:34:16.672] 67) "spring:session:sessions:99ddae8a-020c-42d9-a851-5eb216bc54d9"
+[2020-06-29 16:34:16.672] 68) "spring:session:sessions:expires:5b643826-c29f-4c7e-8dad-d772e26bebf8"      
+[2020-06-29 16:34:16.672] 69) "spring:session:sessions:e760d649-22ba-453f-bad9-e5ec3e9faba8"
+[2020-06-29 16:34:16.672] 70) "spring:session:sessions:expires:7c7ce573-d0a0-4680-9443-06bda80eca5b"      
+[2020-06-29 16:34:16.672] 71) "spring:session:expirations:1593567840000"
+[2020-06-29 16:34:16.672] 72) "spring:session:sessions:cc2b6e0e-fc13-42e3-8f2b-4e0ec0f61261"
+[2020-06-29 16:34:16.672] 73) "spring:session:sessions:9df206a5-eab5-45f0-9e64-a2839015ceb4"
+[2020-06-29 16:34:16.672] 74) "spring:session:sessions:expires:b33a7ce3-fbcd-4d1d-8cdf-3575760d924c"      
+[2020-06-29 16:34:16.672] 75) "spring:session:sessions:expires:48e767fc-daa9-481d-90ef-13c7f7b1b33b"      
+[2020-06-29 16:34:16.672] 76) "spring:session:expirations:1593569160000"
+[2020-06-29 16:34:16.672] 77) "spring:session:sessions:expires:faccaeb7-f92a-446b-8538-934440790c25"      
+[2020-06-29 16:34:16.672] 78) "spring:session:sessions:dc5af8bf-5a2b-4cb2-a9d4-d927ff858e1a"
+[2020-06-29 16:34:16.672] 79) "spring:session:expirations:1593429060000"
+[2020-06-29 16:34:16.672] 80) "spring:session:sessions:6877362e-97ab-4ccb-af26-e796a6845849"
+[2020-06-29 16:34:16.672] 81) "spring:session:sessions:expires:32e16216-2b7b-4983-8bdb-ed7e98bfb8e7"      
+[2020-06-29 16:34:16.672] 82) "spring:session:sessions:expires:99ddae8a-020c-42d9-a851-5eb216bc54d9"      
+[2020-06-29 16:34:16.672] 83) "spring:session:sessions:1c0b88a7-cb1d-49eb-a03b-de655962656f"
+[2020-06-29 16:34:16.672] 127.0.0.1:6379> get test
+[2020-06-29 16:34:16.672] "\"p\""
+[2020-06-29 16:34:16.672] 127.0.0.1:6379> get testkey1
+[2020-06-29 16:34:16.672] "value1"
+[2020-06-29 16:34:16.672] 127.0.0.1:6379> exit
+[2020-06-29 16:34:16.688] 
+[2020-06-29 16:34:16.688] benju@ASUS-PC D:\prj\redis>exu it

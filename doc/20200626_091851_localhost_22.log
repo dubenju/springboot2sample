@@ -1,0 +1,714 @@
+
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.827] 
+[2020-06-26 09:18:52.836] Microsoft Windows [Version 10.0.18363.900]
+[2020-06-26 09:18:52.836] (c) 2019 Microsoft Corporation. All rights reserved.
+[2020-06-26 09:18:52.836] 
+[2020-06-26 09:18:52.836] benju@ASUS-PC C:\Users\benju>cd /prj
+[2020-06-26 09:19:01.458] 
+[2020-06-26 09:19:01.458] benju@ASUS-PC C:\prj>cd    dir
+[2020-06-26 09:19:06.908]  ドライブ C のボリューム ラベルは OS です
+[2020-06-26 09:19:06.908]  ボリューム シリアル番号は 5C47-7E8C です
+[2020-06-26 09:19:06.908] 
+[2020-06-26 09:19:06.908]  C:\prj のディレクトリ
+[2020-06-26 09:19:06.908] 
+[2020-06-26 09:19:06.908] 2020/06/26  08:43    <DIR>          .
+[2020-06-26 09:19:06.908] 2020/06/26  08:43    <DIR>          ..
+[2020-06-26 09:19:06.908] 2020/05/29  18:22    <DIR>          df141
+[2020-06-26 09:19:06.908] 2020/04/21  20:59    <DIR>          doc
+[2020-06-26 09:19:06.908] 2020/04/25  07:58                78 empty.vbs
+[2020-06-26 09:19:06.908] 2020/06/25  12:57    <DIR>          mail
+[2020-06-26 09:19:06.908] 2015/02/04  20:38    <DIR>          mysql
+[2020-06-26 09:19:06.908] 2020/04/11  20:18    <DIR>          ocr
+[2020-06-26 09:19:06.908] 2020/06/26  09:15    <DIR>          postgresql
+[2020-06-26 09:19:06.908] 2015/01/19  07:28    <DIR>          res
+[2020-06-26 09:19:06.908] 2020/04/11  19:58    <DIR>          springboot
+[2020-06-26 09:19:06.908] 2015/04/18  21:02    <DIR>          vm
+[2020-06-26 09:19:06.908]                1 個のファイル                  78 バイト
+[2020-06-26 09:19:06.912]               11 個のディレクトリ  160,663,265,280 バイトの空き領域
+[2020-06-26 09:19:06.912] 
+[2020-06-26 09:19:06.912] benju@ASUS-PC C:\prj>cd postgresql
+[2020-06-26 09:19:12.472] 
+[2020-06-26 09:19:12.472] benju@ASUS-PC C:\prj\postgresql>where psql
+[2020-06-26 09:19:18.048]  ドライブ C のボリューム ラベルは OS です
+[2020-06-26 09:19:18.048]  ボリューム シリアル番号は 5C47-7E8C です
+[2020-06-26 09:19:18.048] 
+[2020-06-26 09:19:18.048]  C:\prj のディレクトリ
+[2020-06-26 09:19:18.048] 
+[2020-06-26 09:19:18.048] 2020/06/26  08:43    <DIR>          .
+[2020-06-26 09:19:18.048] 2020/06/26  08:43    <DIR>          ..
+[2020-06-26 09:19:18.048] 2020/05/29  18:22    <DIR>          df141
+[2020-06-26 09:19:18.048] 2020/04/21  20:59    <DIR>          doc
+[2020-06-26 09:19:18.048] 2020/04/25  07:58                78 empty.vbs
+[2020-06-26 09:19:18.048] 2020/06/25  12:57    <DIR>          mail
+[2020-06-26 09:19:18.048] 2015/02/04  20:38    <DIR>          mysql
+[2020-06-26 09:19:18.048] 2020/04/11  20:18    <DIR>          ocr
+[2020-06-26 09:19:18.048] 2020/06/26  09:15    <DIR>          postgresql
+[2020-06-26 09:19:18.048] 2015/01/19  07:28    <DIR>          res
+[2020-06-26 09:19:18.048] 2020/04/11  19:58    <DIR>          springboot
+[2020-06-26 09:19:18.048] 2015/04/18  21:02    <DIR>          vm
+[2020-06-26 09:19:18.048]                1 個のファイル                  78 バイト
+[2020-06-26 09:19:18.048]               11 個のディレクトリ  160,663,265,280 バイトの空き領域
+[2020-06-26 09:19:18.050] 
+[2020-06-26 09:19:18.050] benju@ASUS-PC C:\prj>cd postgresql
+[2020-06-26 09:19:18.050] 
+[2020-06-26 09:19:18.050] benju@ASUS-PC C:\prj\postgresql>where psql
+[2020-06-26 09:19:18.276] 情報: 与えられたパターンのファイルが見つかりませんでした。
+[2020-06-26 09:19:18.281]  ボリューム シリアル番号は 5C47-7E8C です
+[2020-06-26 09:19:18.281] 
+[2020-06-26 09:19:18.281]  C:\prj のディレクトリ
+[2020-06-26 09:19:18.281] 
+[2020-06-26 09:19:18.281] 2020/06/26  08:43    <DIR>          .
+[2020-06-26 09:19:18.281] 2020/06/26  08:43    <DIR>          ..
+[2020-06-26 09:19:18.281] 2020/05/29  18:22    <DIR>          df141
+[2020-06-26 09:19:18.281] 2020/04/21  20:59    <DIR>          doc
+[2020-06-26 09:19:18.281] 2020/04/25  07:58                78 empty.vbs
+[2020-06-26 09:19:18.281] 2020/06/25  12:57    <DIR>          mail
+[2020-06-26 09:19:18.281] 2015/02/04  20:38    <DIR>          mysql
+[2020-06-26 09:19:18.281] 2020/04/11  20:18    <DIR>          ocr
+[2020-06-26 09:19:18.281] 2020/06/26  09:15    <DIR>          postgresql
+[2020-06-26 09:19:18.281] 2015/01/19  07:28    <DIR>          res
+[2020-06-26 09:19:18.281] 2020/04/11  19:58    <DIR>          springboot
+[2020-06-26 09:19:18.281] 2015/04/18  21:02    <DIR>          vm
+[2020-06-26 09:19:18.281]                1 個のファイル                  78 バイト
+[2020-06-26 09:19:18.281]               11 個のディレクトリ  160,663,265,280 バイトの空き領域
+[2020-06-26 09:19:18.281] 
+[2020-06-26 09:19:18.281] benju@ASUS-PC C:\prj>cd postgresql
+[2020-06-26 09:19:18.281] 
+[2020-06-26 09:19:18.281] benju@ASUS-PC C:\prj\postgresql>where psql
+[2020-06-26 09:19:18.283] 情報: 与えられたパターンのファイルが見つかりませんでした。
+[2020-06-26 09:19:18.284] 
+[2020-06-26 09:19:18.284] benju@ASUS-PC C:\prj\postgresql>psql -h localhost -U postgres - psql -h localhost --U postgres psql -h localhost -p-U postgres psql -h localhost -p -U postgres psql -h localhost -p 5-U postgres psql -h localhost -p 54-U postgres psql -h localhost -p 543-U postgres psql -h localhost -p 5432-U postgres psql -h localhost -p 5432 -U postgres -d postgre
+[2020-06-26 09:20:05.103] s
+[2020-06-26 09:20:07.431] 'psql' は、内部コマンドまたは外部コマンド、
+[2020-06-26 09:20:07.431] 操作可能なプログラムまたはバッチ ファイルとして認識されていません。
+[2020-06-26 09:20:07.435] 
+[2020-06-26 09:20:07.435] benju@ASUS-PC C:\prj\postgresql>set
+[2020-06-26 09:20:17.273] ALLUSERSPROFILE=C:\ProgramData
+[2020-06-26 09:20:17.273] ANT_HOME=C:\apache-ant-1.9.4
+[2020-06-26 09:20:17.273] APPDATA=C:\Users\benju\AppData\Roaming
+[2020-06-26 09:20:17.273] ChocolateyInstall=C:\ProgramData\chocolatey
+[2020-06-26 09:20:17.273] ChocolateyLastPathUpdate=132363989232338855
+[2020-06-26 09:20:17.273] CommonProgramFiles=C:\Program Files\Common Files
+[2020-06-26 09:20:17.273] CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+[2020-06-26 09:20:17.285] CommonProgramW6432=C:\Program Files\Common Files
+[2020-06-26 09:20:17.285] COMPUTERNAME=ASUS-PC
+[2020-06-26 09:20:17.285] ComSpec=C:\WINDOWS\system32\cmd.exe
+[2020-06-26 09:20:17.285] DriverData=C:\Windows\System32\Drivers\DriverData
+[2020-06-26 09:20:17.285] FP_NO_HOST_CHECK=NO
+[2020-06-26 09:20:17.285] HOME=C:\Users\benju
+[2020-06-26 09:20:17.285] HOMEDRIVE=C:
+[2020-06-26 09:20:17.285] HOMEPATH=\Users\benju
+[2020-06-26 09:20:17.285] JAVA_HOME=C:\jdk1.8.0_202
+[2020-06-26 09:20:17.285] LOCALAPPDATA=C:\Users\benju\AppData\Local
+[2020-06-26 09:20:17.285] LOGNAME=benju
+[2020-06-26 09:20:17.285] NODE_PATH=C:\nodejs\nodejs\node_global\node_modules
+[2020-06-26 09:20:17.285] NUMBER_OF_PROCESSORS=8
+[2020-06-26 09:20:17.285] OneDrive=C:\Users\benju\OneDrive
+[2020-06-26 09:20:17.285] OneDriveConsumer=C:\Users\benju\OneDrive
+[2020-06-26 09:20:17.285] OPENCV_DIR=C:\opencv\build\
+[2020-06-26 09:20:17.285] OPENSSL_CONF=C:\PostgreSQL\psqlODBC\etc\openssl.cnf
+[2020-06-26 09:20:17.285] OS=Windows_NT
+[2020-06-26 09:20:17.285] Path=C:\Python38\Scripts\;C:\Python38\;C:\oraclexe\app\oracle\product\11.2.0\ser
+[2020-06-26 09:20:17.287] ver\bin;C:\Program Files (x86)\Windows Resource Kits\Tools\;D:\prj\cob\gnucobol-
+[2020-06-26 09:20:17.287] 3.0-rc1\build_windows\Win32\Release;C:\Program Files (x86)\MySQL\MySQL Server 5.
+[2020-06-26 09:20:17.287] 6\bin;C:\apache-ant-1.9.4\bin;C:\jdk1.8.0_202\bin;C:\Program Files (x86)\Intel\i
+[2020-06-26 09:20:17.287] CLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C
+[2020-06-26 09:20:17.287] :\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program F
+[2020-06-26 09:20:17.287] iles\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Inte
+[2020-06-26 09:20:17.287] l(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Mana
+[2020-06-26 09:20:17.287] gement Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management En
+[2020-06-26 09:20:17.287] gine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Fil
+[2020-06-26 09:20:17.287] es\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C
+[2020-06-26 09:20:17.287] :\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft 
+[2020-06-26 09:20:17.289] SQL Server\120\Tools\Binn\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.3 & MyS
+[2020-06-26 09:20:17.289] QL Utilities 1.5.3 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.3 & MySQL 
+[2020-06-26 09:20:17.289] Utilities 1.5.3 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\NVIDIA C
+[2020-06-26 09:20:17.289] orporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Windo
+[2020-06-26 09:20:17.289] wsPowerShell\v1.0\;C:\WINDOWS\System32\Wbem;C:\Program Files (x86)\Microsoft Vis
+[2020-06-26 09:20:17.289] ual Studio 12.0\VC\bin;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Bin;C
+[2020-06-26 09:20:17.289] :\WINDOWS\System32\OpenSSH\;C:\opencv\build\bin\;C:\opencv\build\x64\vc15\bin\;C
+[2020-06-26 09:20:17.289] :\opencv\build\java\x64\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Pr
+[2020-06-26 09:20:17.289] ogram Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL 
+[2020-06-26 09:20:17.289] Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\PuTTY\;C:\Program Files\
+[2020-06-26 09:20:17.289] WinRAR\;C:\Program Files\Redis\;C:\Program Files\Amazon\AWSCLI\bin\;C:\nodejs\no
+[2020-06-26 09:20:17.299] dejs\;C:\ProgramData\chocolatey\bin;C:\nodejs\nodejs\node_global\;C:\Program Fil
+[2020-06-26 09:20:17.299] es\TortoiseGit\bin;C:\tools\ffmpeg\bin;C:\opencv-3.4.10\build\x64\vc14\bin\;C:\o
+[2020-06-26 09:20:17.299] pencv-2.4.13.6\build\x64\vc14\bin\;C:\Users\benju\AppData\Local\Microsoft\Window
+[2020-06-26 09:20:17.299] sApps;C:\Users\benju\.dotnet\tools;C:\Users\benju\.cargo\bin;C:\Users\benju\AppD
+[2020-06-26 09:20:17.299] ata\Local\Microsoft\WindowsApps;C:\Users\benju\AppData\Local\GitHubDesktop\bin;C
+[2020-06-26 09:20:17.299] :\Users\benju\AppData\Roaming\npm
+[2020-06-26 09:20:17.299] PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+[2020-06-26 09:20:17.299] PROCESSOR_ARCHITECTURE=AMD64
+[2020-06-26 09:20:17.299] PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+[2020-06-26 09:20:17.299] PROCESSOR_LEVEL=6
+[2020-06-26 09:20:17.299] PROCESSOR_REVISION=3c03
+[2020-06-26 09:20:17.299] ProgramData=C:\ProgramData
+[2020-06-26 09:20:17.299] ProgramFiles=C:\Program Files
+[2020-06-26 09:20:17.311] ProgramFiles(x86)=C:\Program Files (x86)
+[2020-06-26 09:20:17.311] ProgramW6432=C:\Program Files
+[2020-06-26 09:20:17.311] PROMPT=benju@ASUS-PC $P$G
+[2020-06-26 09:20:17.311] PSModulePath=C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
+[2020-06-26 09:20:17.311] PUBLIC=C:\Users\Public
+[2020-06-26 09:20:17.311] SHELL=c:\windows\system32\cmd.exe
+[2020-06-26 09:20:17.311] SSH_CLIENT=::1 50562 22
+[2020-06-26 09:20:17.311] SSH_CONNECTION=::1 50562 ::1 22
+[2020-06-26 09:20:17.311] SSH_TTY=windows-pty
+[2020-06-26 09:20:17.311] SystemDrive=C:
+[2020-06-26 09:20:17.311] SystemRoot=C:\WINDOWS
+[2020-06-26 09:20:17.311] TEMP=C:\Users\benju\AppData\Local\Temp
+[2020-06-26 09:20:17.311] TERM=xterm
+[2020-06-26 09:20:17.311] TMP=C:\Users\benju\AppData\Local\Temp
+[2020-06-26 09:20:17.311] USER=benju
+[2020-06-26 09:20:17.311] USERDOMAIN=WORKGROUP
+[2020-06-26 09:20:17.311] USERNAME=benju
+[2020-06-26 09:20:17.311] USERPROFILE=C:\Users\benju
+[2020-06-26 09:20:17.311] VS120COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools
+[2020-06-26 09:20:17.318] \
+[2020-06-26 09:20:17.318] VS160COMCOMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\
+[2020-06-26 09:20:17.318] Common7\Tools\
+[2020-06-26 09:20:17.318] windir=C:\WINDOWS
+[2020-06-26 09:20:17.318] 
+[2020-06-26 09:20:17.318] benju@ASUS-PC C:\prj\postgresql>echi   o %Path%
+[2020-06-26 09:22:01.256] C:\Python38\Scripts\;C:\Python38\;C:\oraclexe\app\oracle\product\11.2.0\server\b
+[2020-06-26 09:22:01.258] in;C:\Program Files (x86)\Windows Resource Kits\Tools\;D:\prj\cob\gnucobol-3.0-r
+[2020-06-26 09:22:01.258] c1\build_windows\Win32\Release;C:\Program Files (x86)\MySQL\MySQL Server 5.6\bin
+[2020-06-26 09:22:01.258] ;C:\apache-ant-1.9.4\bin;C:\jdk1.8.0_202\bin;C:\Program Files (x86)\Intel\iCLS C
+[2020-06-26 09:22:01.258] lient\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Win
+[2020-06-26 09:22:01.258] dows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\
+[2020-06-26 09:22:01.258] Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) 
+[2020-06-26 09:22:01.258] Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Managemen
+[2020-06-26 09:22:01.258] t Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine 
+[2020-06-26 09:22:01.258] Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\In
+[2020-06-26 09:22:01.258] tel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Pro
+[2020-06-26 09:22:01.260] gram Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL S
+[2020-06-26 09:22:01.260] erver\120\Tools\Binn\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.3
+[2020-06-26 09:22:01.266] USERDOMAIN=WORKGROUP
+[2020-06-26 09:22:01.266] USERNAME=benju
+[2020-06-26 09:22:01.266] USERPROFILE=C:\Users\benju
+[2020-06-26 09:22:01.266] VS120COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools
+[2020-06-26 09:22:01.266] \
+[2020-06-26 09:22:01.266] VS160COMCOMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\
+[2020-06-26 09:22:01.266] Common7\Tools\
+[2020-06-26 09:22:01.266] windir=C:\WINDOWS
+[2020-06-26 09:22:01.266] 
+[2020-06-26 09:22:01.266] benju@ASUS-PC C:\prj\postgresql>echo %Path%
+[2020-06-26 09:22:01.266] C:\Python38\Scripts\;C:\Python38\;C:\oraclexe\app\oracle\product\11.2.0\server\b
+[2020-06-26 09:22:01.266] in;C:\Program Files (x86)\Windows Resource Kits\Tools\;D:\prj\cob\gnucobol-3.0-r
+[2020-06-26 09:22:01.266] c1\build_windows\Win32\Release;C:\Program Files (x86)\MySQL\MySQL Server 5.6\bin
+[2020-06-26 09:22:01.266] ;C:\apache-ant-1.9.4\bin;C:\jdk1.8.0_202\bin;C:\Program Files (x86)\Intel\iCLS C
+[2020-06-26 09:22:01.266] lient\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Win
+[2020-06-26 09:22:01.266] dows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\
+[2020-06-26 09:22:01.266] Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) 
+[2020-06-26 09:22:01.266] Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Managemen
+[2020-06-26 09:22:01.268] t Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine 
+[2020-06-26 09:22:01.268] Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\In
+[2020-06-26 09:22:01.268] tel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Pro
+[2020-06-26 09:22:01.268] gram Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL S
+[2020-06-26 09:22:01.268] erver\120\Tools\Binn\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.3
+[2020-06-26 09:22:01.296] MySQL  Ver 14.14 Distrib 5.6.47, for Win32 (AMD64)
+[2020-06-26 09:22:01.300] Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+[2020-06-26 09:22:01.300] 
+[2020-06-26 09:22:01.300] Oracle is a registered trademark of Oracle Corporation and/or its
+[2020-06-26 09:22:01.300] affiliates. Other names may be trademarks of their respective
+[2020-06-26 09:22:01.300] owners.
+[2020-06-26 09:22:01.300] 
+[2020-06-26 09:22:01.300] Usage: MySQL [OPTIONS] [database]
+[2020-06-26 09:22:01.302]   -?, --help          Display this help and exit.
+[2020-06-26 09:22:01.302]   -I, --help          Synonym for -?
+[2020-06-26 09:22:01.302]   --auto-rehash       Enable automatic rehashing. One doesn't need to use       
+[2020-06-26 09:22:01.306]                       'rehash' to get table and field completion, but startup
+[2020-06-26 09:22:01.308]                       and reconnecting may take a longer time. Disable with     
+[2020-06-26 09:22:01.309]                       --disable-auto-rehash.
+[2020-06-26 09:22:01.310]                       (Defaults to on; use --skip-auto-rehash to disable.)      
+[2020-06-26 09:22:01.310]   -A, --no-auto-rehash
+[2020-06-26 09:22:01.313]                       No automatic rehashing. One has to use 'rehash' to get    
+[2020-06-26 09:22:01.315]                       table and field completion. This gives a quicker start of
+[2020-06-26 09:22:01.316]                       mysql and disables rehashing on reconnect.
+[2020-06-26 09:22:01.317]   --auto-vertical-output
+[2020-06-26 09:22:01.320]                       Automatically switch to vertical output mode if the       
+[2020-06-26 09:22:01.321]                       result is wider than the terminal width.
+[2020-06-26 09:22:01.322]   -B, --batchDon't use history file. Disable interactive behavior.
+[2020-06-26 09:22:01.324]                       (Enables --silent.)
+[2020-06-26 09:22:01.325]   --bind-address=name IP address to bind to.
+[2020-06-26 09:22:01.327]   --binary-as-hex     Print binary data as hex
+[2020-06-26 09:22:01.327]   --character-sets-dir=name
+[2020-06-26 09:22:01.329]                       Directory for character set files.
+[2020-06-26 09:22:01.329]   --column-type-info  Display column type information.
+[2020-06-26 09:22:01.331]   -c, --comments      Preserve comments. Send comments to the server. The       
+[2020-06-26 09:22:01.333]                       default is --skip-comments (discard comments), enable
+[2020-06-26 09:22:01.334]                       with --comments.
+[2020-06-26 09:22:01.336]   -C, --compress      Use compression in server/client protocol.
+[2020-06-26 09:22:01.337]   -#, --debug[=#]     This is a non-debug version. Catch this and exit.
+[2020-06-26 09:22:01.337]   --debug-check       Check memory and open file usage at exit.
+[2020-06-26 09:22:01.341]   -T, --debug-info    Print some debug info at exit.
+[2020-06-26 09:22:01.341]   -D, --database=name Database to use.
+[2020-06-26 09:22:01.341]   --default-character-set=name
+[2020-06-26 09:22:01.344]                       Set the default character set.
+[2020-06-26 09:22:01.344]   --delimiter=name    Delimiter to be used.
+[2020-06-26 09:22:01.344]   --enable-cleartext-plugin
+[2020-06-26 09:22:01.344]                       Enable/disable the clear text authentication plugin.      
+[2020-06-26 09:22:01.345]   -e, --execute=name  Execute command and quit. (Disables --force and history   
+[2020-06-26 09:22:01.347]                       file.)
+[2020-06-26 09:22:01.347]   -E, --vertical      Print the output of a query (rows) vertically.
+[2020-06-26 09:22:01.349]   -f, --force         Continue even if we get an SQL error.
+[2020-06-26 09:22:01.349]   -G, --named-commands
+[2020-06-26 09:22:01.350]                       Enable named commands. Named commands mean this program's
+[2020-06-26 09:22:01.352]                       internal commands; see mysql> help . When enabled, the    
+[2020-06-26 09:22:01.354]                       named commands can be used from any line of the query,    
+[2020-06-26 09:22:01.357]                       otherwise only from the first line, before an enter.      
+[2020-06-26 09:22:01.359]      Disable with --disable-named-commands. This option is
+[2020-06-26 09:22:01.360]                       disabled by default.
+[2020-06-26 09:22:01.361]   -i, --ignore-spaces Ignore space after function names.
+[2020-06-26 09:22:01.364]   --init-command=name SQL Command to execute when connecting to MySQL server.   
+[2020-06-26 09:22:01.366]                       Will automatically be re-executed when reconnecting.      
+[2020-06-26 09:22:01.368]   --local-infileEnable/disable LOAD DATA LOCAL INFILE.
+[2020-06-26 09:22:01.371]   -b, --no-beep       Turn off beep on error.
+[2020-06-26 09:22:01.371]   -h, --host=name     Connect to host.
+[2020-06-26 09:22:01.371]   -H, --html          Produce HTML output.
+[2020-06-26 09:22:01.374]   -X, --xml           Produce XML output.
+[2020-06-26 09:22:01.374]   --line-numbers      Write line numbers for errors.
+[2020-06-26 09:22:01.377]                       (Defaults to on; use --skip-line-numbers to disable.)     
+[2020-06-26 09:22:01.377]   -L, --skip-line-numbers
+[2020-06-26 09:22:01.377]                       Don't write line number for errors.
+[2020-06-26 09:22:01.377]   -n, --unbuffered    Flush buffer after each query.
+[2020-06-26 09:22:01.377]   --column-names      Write column names in results.
+[2020-06-26 09:22:01.380]                       (Defaults to on; use --skip-column-names to disable.)     
+[2020-06-26 09:22:01.380]   -N, --skip-column-names 
+[2020-06-26 09:22:01.380]                       Don't write column names in results.
+[2020-06-26 09:22:01.380]   --sigint-ignore     Ignore SIGINT (CTRL-C).
+[2020-06-26 09:22:01.381]   -o, --one-database  Ignore statements except those that occur while the       
+[2020-06-26 09:22:01.381]                       default database is the one named at the command line.    
+[2020-06-26 09:22:01.383]   -p, --password[=name]
+[2020-06-26 09:22:01.384]                       Password to use when connecting to server. If password is 
+[2020-06-26 09:22:01.386]          not given it's asked from the tty.
+[2020-06-26 09:22:01.386]   -W, --pipe          Use named pipes to connect to server.
+[2020-06-26 09:22:01.388]   -P, --port=#        Port number to use for connection or 0 for default to, in 
+[2020-06-26 09:22:01.390]                       order of preference, my.cnf, $MYSQL_TCP_PORT,
+[2020-06-26 09:22:01.391]                       /etc/services, built-in default (3306).
+[2020-06-26 09:22:01.392]   --prompt=name       Set the mysql prompt to this value.
+[2020-06-26 09:22:01.393]   --protocol=name     The protocol to use for connection (tcp, socket, pipe,    
+[2020-06-26 09:22:01.395]                       memory).
+[2020-06-26 09:22:01.397]   -q, --quick         Don't cache result, print it row by row. This may slow    
+[2020-06-26 09:22:01.399]                       down the server if the output is suspended. Doesn't use   
+[2020-06-26 09:22:01.400]                       history file.
+[2020-06-26 09:22:01.401]   -r, --raw           Write fields without conversion. Used with --batch.       
+[2020-06-26 09:22:01.403]   --reconnect         Reconnect if the connection is lost. Disable with
+[2020-06-26 09:22:01.404]                       --disable-reconnect. This option is enabled by default.   
+[2020-06-26 09:22:01.405]                       (Defaults to on; use --skip-reconnect to disable.)        
+[2020-06-26 09:22:01.406]   -s, --silent        Be more silent. Print results with a tab as separator,    
+[2020-06-26 09:22:01.408]                       each row on new line.
+[2020-06-26 09:22:01.409]   --shared-memory-base-name=name
+[2020-06-26 09:22:01.410]                       Base name of shared memory.
+[2020-06-26 09:22:01.411]   -S, --socket=name   The socket file to use for connection.
+[2020-06-26 09:22:01.412]   --ssl               Enable SSL for connection (automatically enabled with
+[2020-06-26 09:22:01.414]                       other flags).
+[2020-06-26 09:22:01.416]   --ssl-ca=name       CA file in PEM format (check OpenSSL docs, implies        
+[2020-06-26 09:22:01.417]                       --ssl).
+[2020-06-26 09:22:01.419]   --ssl-capath=name   CA directory (check OpenSSL docs, implies --ssl).
+[2020-06-26 09:22:01.419]   --ssl-cert=name     X509 cert in PEM format (implies --ssl).
+[2020-06-26 09:22:01.422]   --ssl-cipher=name   SSL cipher to use (implies --ssl).
+[2020-06-26 09:22:01.422]   --ssl-key=name      X509 key in PEM format (implies --ssl).
+[2020-06-26 09:22:01.422]   --ssl-crl=name      Certificate revocation list (implies --ssl).
+[2020-06-26 09:22:01.423]   --ssl-crlpath=name  Certificate revocation list path (implies --ssl).
+[2020-06-26 09:22:01.423]   --ssl-verify-server-cert
+[2020-06-26 09:22:01.425]                       Verify server's "Common Name" in its cert against
+[2020-06-26 09:22:01.427]                       hostname used when connecting. This option is disabled by 
+[2020-06-26 09:22:01.428]                       default.
+[2020-06-26 09:22:01.430]   --ssl-mode=name     SSL connection mode.
+[2020-06-26 09:22:01.430]   -t, --table         Output in table format.
+[2020-06-26 09:22:01.431]   --tee=name          Append everything into outfile. See interactive help (\h)
+[2020-06-26 09:22:01.434]                       also. Does not work in batch mode. Disable with
+[2020-06-26 09:22:01.435]                       --disable-tee. This option is disabled by default.        
+[2020-06-26 09:22:01.436]   -u, --user=name     User for login if not current user.
+[2020-06-26 09:22:01.436]   -U, --safe-updates  Only allow UPDATE and DELETE that uses keys.
+[2020-06-26 09:22:01.438]   -U, --i-am-a-dummy  Synonym for option --safe-updates, -U.
+[2020-06-26 09:22:01.438]   -v, --verbose       Write more. (-v -v -v gives the table output format).     
+[2020-06-26 09:22:01.438]   -V, --version       Output version information and exit.
+[2020-06-26 09:22:01.441]   -w, --wait          Wait and retry if connection is down.
+[2020-06-26 09:22:01.441]   --connect-timeout=# Number of seconds before connection timeout.
+[2020-06-26 09:22:01.442]   --max-allowed-packet=#
+[2020-06-26 09:22:01.443]                       The maximum packet length to send to or receive from      
+[2020-06-26 09:22:01.443]                       server.
+[2020-06-26 09:22:01.445]   --net-buffer-length=#
+[2020-06-26 09:22:01.446]                       The buffer size for TCP/IP and socket communication.      
+[2020-06-26 09:22:01.446]   --select-limit=#    Automatic limit for SELECT when using --safe-updates.     
+[2020-06-26 09:22:01.448]   --max-join-size=#   Automatic limit for rows in a join when using
+[2020-06-26 09:22:01.449]                       --safe-updates.
+[2020-06-26 09:22:01.451]   --secure-auth       Refuse client connecting to server if it uses old
+[2020-06-26 09:22:01.452]                       (pre-4.1.1) protocol.
+[2020-06-26 09:22:01.453]                       (Defaults to on; use --skip-secure-auth to disable.)      
+[2020-06-26 09:22:01.453]   --server-arg=name   Send embedded server this as a parameter.
+[2020-06-26 09:22:01.455]   --show-warnings     Show warnings after every statement.
+[2020-06-26 09:22:01.455]   --plugin-dir=name   Directory for client-side plugins.
+[2020-06-26 09:22:01.456]   --default-auth=name Default authentication client-side plugin to use.
+[2020-06-26 09:22:01.457]   --histignore=name   A colon-separated list of patterns to keep statements     
+[2020-06-26 09:22:01.458]                    from getting logged into mysql history.
+[2020-06-26 09:22:01.460]   --binary-mode       By default, ASCII '\0' is disallowed and '\r\n' is        
+[2020-06-26 09:22:01.463]                       translated to '\n'. This switch turns off both features,  
+[2020-06-26 09:22:01.465]                       and also turns off parsing of all clientcommands except   
+[2020-06-26 09:22:01.467]                 \C and DELIMITER, in non-interactive mode (for input
+[2020-06-26 09:22:01.470]                       piped to mysql or loaded using the 'source' command).     
+[2020-06-26 09:22:01.472]                       This is necessary when processing output from mysqlbinlog 
+[2020-06-26 09:22:01.473]                       that may contain blobs.
+[2020-06-26 09:22:01.475]   --server-public-key-path=name
+[2020-06-26 09:22:01.476]             File path to the server public RSA key in PEM format.
+[2020-06-26 09:22:01.477]   --connect-expired-password
+[2020-06-26 09:22:01.478]                       Notify the server that this client is prepared to handle  
+[2020-06-26 09:22:01.481]                       expired password sandbox mode.
+[2020-06-26 09:22:01.481] 
+[2020-06-26 09:22:01.481] Default options are read from the following files in the given order:
+[2020-06-26 09:22:01.487] C:\WINDOWS\my.ini C:\WINDOWS\my.cnf C:\my.ini C:\my.cnf C:\Program Files (x86)\M
+[2020-06-26 09:22:01.487] ySQL\MySQL Server 5.6\my.ini C:\Program Files (x86)\MySQL\MySQL Server 5.6\my.cn
+[2020-06-26 09:22:01.487] f
+[2020-06-26 09:22:01.487] The following groups are read: mysql client
+[2020-06-26 09:22:01.487] The following options may be given as the first argument:
+[2020-06-26 09:22:01.487] --print-defaults        Print the program argument list and exit.
+[2020-06-26 09:22:01.487] --no-defaults           Don't read default options from any option file,        
+[2020-06-26 09:22:01.487]                         except for login file.
+[2020-06-26 09:22:01.487] --defaults-file=#       Only read default options from the given file #.        
+[2020-06-26 09:22:01.487] --defaults-extra-file=# Read this file after the global files are read.
+[2020-06-26 09:22:01.487] --defaults-group-suffix=#
+[2020-06-26 09:22:01.487]                         Also read groups with concat(group, suffix)
+[2020-06-26 09:22:01.487] --login-path=#          Read this path from the login file.
+[2020-06-26 09:22:01.492] 
+[2020-06-26 09:22:01.492] Variables (--variable-name=value)
+[2020-06-26 09:22:01.492] and boolean options {FALSE|TRUE}  Value (after reading options)
+[2020-06-26 09:22:01.492] --------------------------------- ----------------------------------------
+[2020-06-26 09:22:01.492] auto-rehash                       TRUE
+[2020-06-26 09:22:01.492] auto-vertical-output              FALSE
+[2020-06-26 09:22:01.492] bind-address                      (No default value)
+[2020-06-26 09:22:01.496] binary-as-hex                     FALSE
+[2020-06-26 09:22:01.496] character-sets-dir                (No default value)
+[2020-06-26 09:22:01.496] column-type-info                  FALSE
+[2020-06-26 09:22:01.496] comments                          FALSE
+[2020-06-26 09:22:01.496] compress                          FALSE
+[2020-06-26 09:22:01.499] debug-check                       FALSE
+[2020-06-26 09:22:01.499] debug-info                        FALSE
+[2020-06-26 09:22:01.499] database                          (No default value)
+[2020-06-26 09:22:01.501] default-character-set             auto
+[2020-06-26 09:22:01.501] delimiter                         ;
+[2020-06-26 09:22:01.503] enable-cleartext-plugin           FALSE
+[2020-06-26 09:22:01.503] vertical                          FALSE
+[2020-06-26 09:22:01.504] force                             FALSE
+[2020-06-26 09:22:01.506] named-commands                    FALSE
+[2020-06-26 09:22:01.507] ignore-spaces                     FALSE
+[2020-06-26 09:22:01.508] init-command                      (No default value)
+[2020-06-26 09:22:01.509] local-infile                      FALSE
+[2020-06-26 09:22:01.511] no-beep                           FALSE
+[2020-06-26 09:22:01.512] host                          (No default value)
+[2020-06-26 09:22:01.513] html                              FALSE
+[2020-06-26 09:22:01.514] xml                               FALSE
+[2020-06-26 09:22:01.516] line-numbers                      TRUE
+[2020-06-26 09:22:01.517] unbuffered                        FALSE
+[2020-06-26 09:22:01.518] column-names                      TRUE
+[2020-06-26 09:22:01.519] sigint-ignore                     FALSE
+[2020-06-26 09:22:01.521] port                              0
+[2020-06-26 09:22:01.522] prompt                            mysql>
+[2020-06-26 09:22:01.523] quick                             FALSE
+[2020-06-26 09:22:01.525] raw                               FALSE
+[2020-06-26 09:22:01.527] reconnect                         TRUE
+[2020-06-26 09:22:01.529] shared-memory-base-name           (No default value)
+[2020-06-26 09:22:01.529] socket                            (No default value)
+[2020-06-26 09:22:01.530] ssl                               FALSE
+[2020-06-26 09:22:01.531] ssl-ca                            (No default value)
+[2020-06-26 09:22:01.532] ssl-capath                        (No default value)
+[2020-06-26 09:22:01.534] ssl-cert                          (No default value)
+[2020-06-26 09:22:01.535] ssl-cipher                        (No default value)
+[2020-06-26 09:22:01.536] ssl-key                           (No default value)
+[2020-06-26 09:22:01.537] ssl-crl   (No default value)
+[2020-06-26 09:22:01.538] ssl-crlpath                       (No default value)
+[2020-06-26 09:22:01.540] ssl-verify-server-cert            FALSE
+[2020-06-26 09:22:01.541] table                             FALSE
+[2020-06-26 09:22:01.542] user                              (No default value)
+[2020-06-26 09:22:01.543] safe-updates                      FALSE
+[2020-06-26 09:22:01.544] i-am-a-dummy                      FALSE
+[2020-06-26 09:22:01.545] connect-timeout                   0
+[2020-06-26 09:22:01.547] max-allowed-packet                16777216
+[2020-06-26 09:22:01.548] net-buffer-length                 16384
+[2020-06-26 09:22:01.549] select-limit                      1000
+[2020-06-26 09:22:01.550] max-join-size                     1000000
+[2020-06-26 09:22:01.551] secure-auth                       TRUE
+[2020-06-26 09:22:01.553] show-warnings                     FALSE
+[2020-06-26 09:22:01.554] plugin-dir                        (No default value)
+[2020-06-26 09:22:01.556] default-auth                      (No default value)
+[2020-06-26 09:22:01.557] histignore                        (No default value)
+[2020-06-26 09:22:01.558] binary-mode                       FALSE
+[2020-06-26 09:22:01.560] server-public-key-path            (No default value)
+[2020-06-26 09:22:01.561] connect-expired-password          FALSE
+[2020-06-26 09:22:01.578] MySQL  Ver 14.14 Distrib 5.6.47, for Win32 (AMD64)
+[2020-06-26 09:22:01.582] Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.    
+[2020-06-26 09:22:01.582] 
+[2020-06-26 09:22:01.582] Oracle is a registered trademark of Oracle Corporation and/or its
+[2020-06-26 09:22:01.582] affiliates. Other names may be trademarks of their respective
+[2020-06-26 09:22:01.582] owners.
+[2020-06-26 09:22:01.582] 
+[2020-06-26 09:22:01.582] Usage: MySQL [OPTIONS] [database]
+[2020-06-26 09:22:01.585]   -?, --help          Display this help and exit.
+[2020-06-26 09:22:01.585]   -I, --help          Synonym for -?
+[2020-06-26 09:22:01.585]   --auto-rehash    Enable automatic rehashing. One doesn't need to use
+[2020-06-26 09:22:01.586]                       'rehash' to get table and field completion, but startup   
+[2020-06-26 09:22:01.589]                       and reconnecting may take a longer time. Disable with     
+[2020-06-26 09:22:01.591]                       --disable-auto-rehash.
+[2020-06-26 09:22:01.591]                       (Defaults to on; use --skip-auto-rehash to disable.)      
+[2020-06-26 09:22:01.593]   -A, --no-auto-rehash
+[2020-06-26 09:22:01.594]                  No automatic rehashing. One has to use 'rehash' to get
+[2020-06-26 09:22:01.596]                       table and field completion. This gives a quicker start of 
+[2020-06-26 09:22:01.598]                       mysql and disables rehashing on reconnect.
+[2020-06-26 09:22:01.599]   --auto-vertical-output
+[2020-06-26 09:22:01.600]                       Automatically switch to vertical output mode if the
+[2020-06-26 09:22:01.602]                       result is wider than the terminal width.
+[2020-06-26 09:22:01.605]   -B, --batch         Don't use history file. Disable interactive behavior.     
+[2020-06-26 09:22:01.607]                       (Enables --silent.)
+[2020-06-26 09:22:01.609]   --bind-address=name IP address to bind to.
+[2020-06-26 09:22:01.609]   --binary-as-hex     Print binary data as hex
+[2020-06-26 09:22:01.612]   --character-sets-dir=name
+[2020-06-26 09:22:01.612]              Directory for character set files.
+[2020-06-26 09:22:01.612]   --column-type-info  Display column type information.
+[2020-06-26 09:22:01.613]   -c, --comments      Preserve comments. Send comments to the server. The       
+[2020-06-26 09:22:01.616]                       default is --skip-comments (discard comments), enable     
+[2020-06-26 09:22:01.617]                       with --comments.
+[2020-06-26 09:22:01.618]   -C, --compress    Use compression in server/client protocol.
+[2020-06-26 09:22:01.620]   -#, --debug[=#]     This is a non-debug version. Catch this and exit.
+[2020-06-26 09:22:01.620]   --debug-check       Check memory and open file usage at exit.
+[2020-06-26 09:22:01.623]   -T, --debug-info    Print some debug info at exit.
+[2020-06-26 09:22:01.623]   -D, --database=name Database to use.
+[2020-06-26 09:22:01.623]   --default-character-set=name
+[2020-06-26 09:22:01.625]                       Set the default character set.
+[2020-06-26 09:22:01.625]   --delimiter=name    Delimiter to be used.
+[2020-06-26 09:22:01.625]   --enable-cleartext-plugin
+[2020-06-26 09:22:01.626]                       Enable/disable the clear text authentication plugin.      
+[2020-06-26 09:22:01.627]   -e, --execute=name  Execute command and quit. (Disables --force and his       tory
+[2020-06-26 09:22:01.629]                       file.)
+[2020-06-26 09:22:01.629]   -E, --vertical      Print the output of a query (rows) vertically.
+[2020-06-26 09:22:01.631]   -f, --force         Continue even if we get an SQL error.
+[2020-06-26 09:22:01.631]   -G, --named-commands
+[2020-06-26 09:22:01.632]                       Enable named commands. Named commands mean this program's 
+[2020-06-26 09:22:01.635]                       internal commands; see mysql> help . When enabled, the    
+[2020-06-26 09:22:01.637]        named commands can be used from any line of the query,
+[2020-06-26 09:22:01.640]                       otherwise only from the first line, before an enter.      
+[2020-06-26 09:22:01.642]                       Disable with --disable-named-commands. This option is     
+[2020-06-26 09:22:01.643]                       disabled by default.
+[2020-06-26 09:22:01.645]   -i, --ignore-spaces Ignore space after function names.
+[2020-06-26 09:22:01.646]   --init-command=name SQL Command to execute when connecting to MySQL server.
+[2020-06-26 09:22:01.647]                       Will automatically be re-executed when reconnecting.      
+[2020-06-26 09:22:01.648]   --local-infile      Enable/disable LOAD DATA LOCAL INFILE.
+[2020-06-26 09:22:01.650]   -b, --no-beep       Turn off beep on error.
+[2020-06-26 09:22:01.650]   -h, --host=name     Connect to host.
+[2020-06-26 09:22:01.653]   -H, --html          Produce HTML output.
+[2020-06-26 09:22:01.653]   -X, --xml           Produce XML output.
+[2020-06-26 09:22:01.653]   --line-numbers      Write line numbers for errors.
+[2020-06-26 09:22:01.655]                       (Defaults to on; use --skip-line-numbers to disable.)     
+[2020-06-26 09:22:01.655]   -L, --skip-line-numbers
+[2020-06-26 09:22:01.655]                       Don't write line number for errors.
+[2020-06-26 09:22:01.655]   -n, --unbufferedFlush buffer after each query.
+[2020-06-26 09:22:01.658]   --column-names      Write column names in results.
+[2020-06-26 09:22:01.658]                       (Defaults to on; use --skip-column-names to disable.)     
+[2020-06-26 09:22:01.658]   -N, --skip-column-names
+[2020-06-26 09:22:01.658]                       Don't write column names in results.
+[2020-06-26 09:22:01.659]   --sigint-ignore     Ignore SIGINT (CTRL-C).
+[2020-06-26 09:22:01.660]   -o, --one-database  Ignore statements except those that occur while the       
+[2020-06-26 09:22:01.661]                       default database is the one named at the command line.    
+[2020-06-26 09:22:01.661]   -p, --password[=name]
+[2020-06-26 09:22:01.663]                       Password to use when connecting to server. If password is
+[2020-06-26 09:22:01.664]                       not given it's asked from the tty.
+[2020-06-26 09:22:01.665]   -W, --pipe          Use named pipes to connect to server.
+[2020-06-26 09:22:01.668]   -P, --port=#        Port number to use for connection or 0 for default to, in 
+[2020-06-26 09:22:01.670]                       order of preference, my.cnf, $MYSQL_TCP_PORT,
+[2020-06-26 09:22:01.671]                       /etc/services, built-in default (3306).
+[2020-06-26 09:22:01.672]   --prompt=name       Set the mysql prompt to this value.
+[2020-06-26 09:22:01.672]   --protocol=name     Theprotocol to use for connection (tcp, socket, pipe,
+[2020-06-26 09:22:01.674]                       memory).
+[2020-06-26 09:22:01.676]   -q, --quick         Don't cache result, print it row by row. This may slow    
+[2020-06-26 09:22:01.679]                       down the server if the output is suspended. Doesn't use   
+[2020-06-26 09:22:01.680]                       history file.
+[2020-06-26 09:22:01.681]   -r, --raw  Write fields without conversion. Used with --batch.
+[2020-06-26 09:22:01.683]   --reconnect         Reconnect if the connection is lost. Disable with
+[2020-06-26 09:22:01.684]                       --disable-reconnect. This option is enabled by default.   
+[2020-06-26 09:22:01.685]                       (Defaults to on; use --skip-reconnect to disable.)        
+[2020-06-26 09:22:01.687]   -s, --silent        Be more silent. Print results with a tab as separator,    
+[2020-06-26 09:22:01.688]                       each row on new line.
+[2020-06-26 09:22:01.689]   --shared-memory-base-name=name
+[2020-06-26 09:22:01.691]                 Base name of shared memory.
+[2020-06-26 09:22:01.692]   -S, --socket=name   The socket file to use for connection.
+[2020-06-26 09:22:01.693]   --ssl               Enable SSL for connection (automatically enabled with     
+[2020-06-26 09:22:01.694]                       other flags).
+[2020-06-26 09:22:01.696]   --ssl-ca=name       CA file in PEM format (check OpenSSL docs, implies        
+[2020-06-26 09:22:01.697]                       --ssl).
+[2020-06-26 09:22:01.699]   --ssl-capath=name   CA directory (check OpenSSL docs, implies --ssl).
+[2020-06-26 09:22:01.699]   --ssl-cert=name     X509 cert in PEM format (implies --ssl).
+[2020-06-26 09:22:01.701]   --ssl-cipher=name   SSL cipher to use (implies --ssl).
+[2020-06-26 09:22:01.701]   --ssl-key=name      X509 key in PEM format (implies --ssl).
+[2020-06-26 09:22:01.701]   --ssl-crl=name      Certificate revocation list (implies --ssl).
+[2020-06-26 09:22:01.703]   --ssl-crlpath=name  Certificate revocation list path (implies --ssl).
+[2020-06-26 09:22:01.703]   --ssl-verify-server-cert
+[2020-06-26 09:22:01.704]                       Verify server's "Common Name" in its cert against
+[2020-06-26 09:22:01.706]                       hostname used when connecting. This option is disabled by 
+[2020-06-26 09:22:01.708]                       default.
+[2020-06-26 09:22:01.709]   --ssl-mode=name     SSL connection mode.
+[2020-06-26 09:22:01.710]   -t, --table         Output in table format.
+[2020-06-26 09:22:01.712]   --tee=name          Append everything into outfile. See interactive help (\h) 
+[2020-06-26 09:22:01.715]                       also. Does not work in batch mode. Disable with
+[2020-06-26 09:22:01.716]                       --disable-tee. This option is disabled by default.        
+[2020-06-26 09:22:01.718]   -u, --user=name     User for login if not current user.
+[2020-06-26 09:22:01.718]   -U, --safe-updates  Only allow UPDATE and DELETE that uses keys.
+[2020-06-26 09:22:01.720]   -U, --i-am-a-dummy  Synonym for option --safe-updates, -U.
+[2020-06-26 09:22:01.720]   -v, --verbose       Write more. (-v -v -v gives the table output format).     
+[2020-06-26 09:22:01.720]   -V, --version       Output version information and exit.
+[2020-06-26 09:22:01.721]   -w, --wait          Wait and retry if connection is down.
+[2020-06-26 09:22:01.721]   --connect-timeout=# Number of seconds before connection timeout.
+[2020-06-26 09:22:01.723]   --max-allowed-packet=#
+[2020-06-26 09:22:01.724]                       The maximum packet length to send to or receive from      
+[2020-06-26 09:22:01.725]                       server.
+[2020-06-26 09:22:01.727]   --net-buffer-length=# 
+[2020-06-26 09:22:01.728]                       The buffer size for TCP/IP and socket communication.      
+[2020-06-26 09:22:01.728]   --select-limit=#    Automatic limit for SELECT when using --safe-updates.     
+[2020-06-26 09:22:01.729]   --max-join-size=#   Automatic limit for rows in a join when using
+[2020-06-26 09:22:01.731]                       --safe-updates.
+[2020-06-26 09:22:01.733]   --secure-auth       Refuse client connecting to server if it uses old
+[2020-06-26 09:22:01.734]                       (pre-4.1.1) protocol.
+[2020-06-26 09:22:01.736]                       (Defaults to on; use --skip-secure-auth to disable.)      
+[2020-06-26 09:22:01.736]   --server-arg=name   Send embedded server this as a parameter.
+[2020-06-26 09:22:01.737] --show-warnings     Show warnings after every statement.
+[2020-06-26 09:22:01.737]   --plugin-dir=name   Directory for client-side plugins.
+[2020-06-26 09:22:01.737]   --default-auth=name Default authentication client-side plugin to use.
+[2020-06-26 09:22:01.739]   --histignore=name   A colon-separated list of patterns to keep statements     
+[2020-06-26 09:22:01.740]                       from getting logged into mysql history.
+[2020-06-26 09:22:01.741]   --binary-mode       By default, ASCII '\0' is disallowed and '\r\n' is        
+[2020-06-26 09:22:01.743]                       translated to '\n'.This switch turns off both features,
+[2020-06-26 09:22:01.747]                       and also turns off parsing of all clientcommands except   
+[2020-06-26 09:22:01.750]                       \C and DELIMITER, in non-interactive mode (for input      
+[2020-06-26 09:22:01.752]                       piped to mysql or loaded using the 'source' command).     
+[2020-06-26 09:22:01.755]           This is necessary when processing output from mysqlbinlog
+[2020-06-26 09:22:01.757]                       that may contain blobs.
+[2020-06-26 09:22:01.758]   --server-public-key-path=name
+[2020-06-26 09:22:01.759]                       File path to the server public RSA key in PEM format.     
+[2020-06-26 09:22:01.760]   --connect-expired-password
+[2020-06-26 09:22:01.762]                       Notify the server that this client is prepared to handle
+[2020-06-26 09:22:01.763]                       expired password sandbox mode.
+[2020-06-26 09:22:01.770] 
+[2020-06-26 09:22:01.770] Default options are read from the following files in the given order:
+[2020-06-26 09:22:01.770] C:\WINDOWS\my.ini C:\WINDOWS\my.cnf C:\my.ini C:\my.cnf C:\Program Files (x86)\M
+[2020-06-26 09:22:01.770] ySQL\MySQL Server 5.6\my.ini C:\Program Files (x86)\MySQL\MySQL Server 5.6\my.cn
+[2020-06-26 09:22:01.770] f
+[2020-06-26 09:22:01.770] The following groups are read: mysql client
+[2020-06-26 09:22:01.770] The following options may be given as the first argument:
+[2020-06-26 09:22:01.770] --print-defaults        Print the program argument list and exit.
+[2020-06-26 09:22:01.770] --no-defaults           Don't read default options from any option file,        
+[2020-06-26 09:22:01.770]                         except for login file.
+[2020-06-26 09:22:01.770] --defaults-file=#       Only read default options from the given file #.        
+[2020-06-26 09:22:01.770] --defaults-extra-file=# Read this file after the global files are read.
+[2020-06-26 09:22:01.770] --defaults-group-suffix=#
+[2020-06-26 09:22:01.770]                         Also read groups with concat(group, suffix)
+[2020-06-26 09:22:01.775] --login-path=#          Read this path from the login file.
+[2020-06-26 09:22:01.775] 
+[2020-06-26 09:22:01.775] Variables (--variable-name=value)
+[2020-06-26 09:22:01.775] and boolean options {FALSE|TRUE}  Value (after reading options)
+[2020-06-26 09:22:01.775] --------------------------------- ----------------------------------------      
+[2020-06-26 09:22:01.775] auto-rehash                       TRUE
+[2020-06-26 09:22:01.775] auto-vertical-output              FALSE
+[2020-06-26 09:22:01.775] bind-address       (No default value)
+[2020-06-26 09:22:01.778] binary-as-hex                     FALSE
+[2020-06-26 09:22:01.778] character-sets-dir                (No default value)
+[2020-06-26 09:22:01.778] column-type-info                  FALSE
+[2020-06-26 09:22:01.778] comments                          FALSE
+[2020-06-26 09:22:01.780] compress                          FALSE
+[2020-06-26 09:22:01.780] debug-check                       FALSE
+[2020-06-26 09:22:01.782] debug-info       FALSE
+[2020-06-26 09:22:01.782] database                          (No default value)
+[2020-06-26 09:22:01.783] default-character-set             auto
+[2020-06-26 09:22:01.785] delimiter                         ;
+[2020-06-26 09:22:01.785] enable-cleartext-plugin           FALSE
+[2020-06-26 09:22:01.786] vertical                          FALSE
+[2020-06-26 09:22:01.787] force                             FALSE
+[2020-06-26 09:22:01.789] named-commands                    FALSE
+[2020-06-26 09:22:01.790] ignore-spaces       FALSE
+[2020-06-26 09:22:01.791] init-command                      (No default value)
+[2020-06-26 09:22:01.792] local-infile                      FALSE
+[2020-06-26 09:22:01.793] no-beep                           FALSE
+[2020-06-26 09:22:01.795] host                              (No default value)
+[2020-06-26 09:22:01.796] html                              FALSE
+[2020-06-26 09:22:01.797] xml                               FALSE
+[2020-06-26 09:22:01.799] line-numbers                      TRUE
+[2020-06-26 09:22:01.799] unbuffered                  FALSE
+[2020-06-26 09:22:01.800] column-names                      TRUE
+[2020-06-26 09:22:01.801] sigint-ignore                     FALSE
+[2020-06-26 09:22:01.802] port                              0
+[2020-06-26 09:22:01.804] prompt                            mysql>
+[2020-06-26 09:22:01.805] quick                             FALSE
+[2020-06-26 09:22:01.806] raw                               FALSE
+[2020-06-26 09:22:01.807] reconnect                         TRUE
+[2020-06-26 09:22:01.809] shared-memory-base-name           (No default value)
+[2020-06-26 09:22:01.810] socket                            (No default value)
+[2020-06-26 09:22:01.811] ssl                               FALSE
+[2020-06-26 09:22:01.813] ssl-ca                            (No default value)
+[2020-06-26 09:22:01.814] ssl-capath                        (No default value)
+[2020-06-26 09:22:01.815] ssl-cert                          (No default value)
+[2020-06-26 09:22:01.816] ssl-cipher    (No default value)
+[2020-06-26 09:22:01.817] ssl-key                           (No default value)
+[2020-06-26 09:22:01.818] ssl-crl                           (No default value)
+[2020-06-26 09:22:01.820] ssl-crlpath                       (No default value)
+[2020-06-26 09:22:01.821] ssl-verify-server-cert            FALSE
+[2020-06-26 09:22:01.823] table                             FALSE
+[2020-06-26 09:22:01.825] user                              (No default value)
+[2020-06-26 09:22:01.825] safe-updates                      FALSE
+[2020-06-26 09:22:01.826] i-am-a-dummy          FALSE
+[2020-06-26 09:22:01.827] connect-timeout                   0
+[2020-06-26 09:22:01.828] max-allowed-packet                16777216
+[2020-06-26 09:22:01.829] net-buffer-length                 16384
+[2020-06-26 09:22:01.831] select-limit                      1000
+[2020-06-26 09:22:01.832] max-join-size                     1000000
+[2020-06-26 09:22:01.833] secure-auth                       TRUE
+[2020-06-26 09:22:01.835] show-warnings                     FALSE
+[2020-06-26 09:22:01.835] plugin-dir           (No default value)
+[2020-06-26 09:22:01.836] default-auth                      (No default value)
+[2020-06-26 09:22:01.837] histignore                        (No default value)
+[2020-06-26 09:22:01.838] binary-mode                       FALSE
+[2020-06-26 09:22:01.840] server-public-key-path            (No default value)
+[2020-06-26 09:22:01.841] connect-expired-password          FALSE
+[2020-06-26 09:22:01.846] ssl-cert                          (No default value)
+[2020-06-26 09:22:01.846] ssl-cipher                        (No default value)
+[2020-06-26 09:22:01.846] ssl-key                           (No default value)
+[2020-06-26 09:22:01.846] ssl-crl                           (No default value)
+[2020-06-26 09:22:01.846] ssl-crlpath                       (No default value)
+[2020-06-26 09:22:01.846] ssl-verify-server-cert            FALSE
+[2020-06-26 09:22:01.846] table                             FALSE
+[2020-06-26 09:22:01.846] user                              (No default value)
+[2020-06-26 09:22:01.846] safe-updates                      FALSE
+[2020-06-26 09:22:01.846] i-am-a-dummy                      FALSE
+[2020-06-26 09:22:01.846] connect-timeout                   0
+[2020-06-26 09:22:01.846] max-allowed-packet                16777216
+[2020-06-26 09:22:01.846] net-buffer-length                 16384
+[2020-06-26 09:22:01.846] select-limit                      1000
+[2020-06-26 09:22:01.846] max-join-size                     1000000
+[2020-06-26 09:22:01.846] secure-auth                       TRUE
+[2020-06-26 09:22:01.846] show-warnings                     FALSE
+[2020-06-26 09:22:01.846] plugin-dir                        (No default value)
+[2020-06-26 09:22:01.846] default-auth                      (No default value)
+[2020-06-26 09:22:01.848] histignore                        (No default value)
+[2020-06-26 09:22:01.848] binary-mode                       FALSE
+[2020-06-26 09:22:01.848] server-public-key-path            (No default value)
+[2020-06-26 09:22:01.848] connect-expired-password          FALSE
+[2020-06-26 09:22:01.851] 
+[2020-06-26 09:22:01.851] benju@ASUS-PC C:\prj\postgresql>exit

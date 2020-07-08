@@ -1,0 +1,134 @@
+
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.394] 
+[2020-06-27 14:46:38.402] Microsoft Windows [Version 10.0.18363.900]
+[2020-06-27 14:46:38.402] (c) 2019 Microsoft Corporation. All rights reserved.
+[2020-06-27 14:46:38.402] 
+[2020-06-27 14:46:38.402] benju@ASUS-PC C:\Users\benju>cd D:\prj\angular
+[2020-06-27 14:46:49.703] 
+[2020-06-27 14:46:49.703] benju@ASUS-PC C:\Users\benju>d:
+[2020-06-27 14:46:51.118] 
+[2020-06-27 14:46:51.118] benju@ASUS-PC D:\prj\angular>where tsc
+[2020-06-27 14:46:56.898] Microsoft Windows [Version 10.0.18363.900]
+[2020-06-27 14:46:56.898] (c) 2019 Microsoft Corporation. All rights reserved.
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] benju@ASUS-PC C:\Users\benju>cd D:\prj\angular
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] benju@ASUS-PC C:\Users\benju>d:
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] benju@ASUS-PC D:\prj\angular>where tsc
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:56.898] 
+[2020-06-27 14:46:57.101] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.exe
+[2020-06-27 14:46:57.109] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.js
+[2020-06-27 14:46:57.118] C:\nodejs\nodejs\node_global\tsc    
+[2020-06-27 14:46:57.118] C:\nodejs\nodejs\node_global\tsc.cmd
+[2020-06-27 14:46:57.133] Microsoft Windows [Version 10.0.18363.900]
+[2020-06-27 14:46:57.133] (c) 2019 Microsoft Corporation. All rights reserved.
+[2020-06-27 14:46:57.133] 
+[2020-06-27 14:46:57.133] benju@ASUS-PC C:\Users\benju>cd D:\prj\angular
+[2020-06-27 14:46:57.133] 
+[2020-06-27 14:46:57.133] benju@ASUS-PC C:\Users\benju>d:
+[2020-06-27 14:46:57.133] 
+[2020-06-27 14:46:57.133] benju@ASUS-PC D:\prj\angular>where tsc
+[2020-06-27 14:46:57.133] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.exe
+[2020-06-27 14:46:57.133] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.js
+[2020-06-27 14:46:57.133] C:\nodejs\nodejs\node_global\tsc
+[2020-06-27 14:46:57.133] C:\nodejs\nodejs\node_global\tsc.cmd
+[2020-06-27 14:46:57.133] 
+[2020-06-27 14:46:57.133] benju@ASUS-PC D:\prj\angular>
+[2020-06-27 14:46:57.133] 
+[2020-06-27 14:46:57.133] 
+[2020-06-27 14:46:57.133] 
+[2020-06-27 14:46:57.133] 
+[2020-06-27 14:46:57.133] 
+[2020-06-27 14:46:57.133] 
+[2020-06-27 14:46:57.133] 
+[2020-06-27 14:46:57.133] 
+[2020-06-27 14:46:57.133] 
+[2020-06-27 14:52:16.014] where tsc
+[2020-06-27 14:52:16.602] Microsoft Windows [Version 10.0.18363.900]
+[2020-06-27 14:52:16.602] (c) 2019 Microsoft Corporation. All rights reserved.
+[2020-06-27 14:52:16.602] 
+[2020-06-27 14:52:16.602] benju@ASUS-PC C:\Users\benju>cd D:\prj\angular
+[2020-06-27 14:52:16.602] 
+[2020-06-27 14:52:16.602] benju@ASUS-PC C:\Users\benju>d:
+[2020-06-27 14:52:16.602] 
+[2020-06-27 14:52:16.602] benju@ASUS-PC D:\prj\angular>where tsc
+[2020-06-27 14:52:16.602] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.exe
+[2020-06-27 14:52:16.602] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.js
+[2020-06-27 14:52:16.602] C:\nodejs\nodejs\node_global\tsc
+[2020-06-27 14:52:16.602] C:\nodejs\nodejs\node_global\tsc.cmd
+[2020-06-27 14:52:16.602] 
+[2020-06-27 14:52:16.602] benju@ASUS-PC D:\prj\angular>where tsc
+[2020-06-27 14:52:16.602] 
+[2020-06-27 14:52:16.602] 
+[2020-06-27 14:52:16.602] 
+[2020-06-27 14:52:16.602] 
+[2020-06-27 14:52:16.602] 
+[2020-06-27 14:52:16.602] 
+[2020-06-27 14:52:16.602] 
+[2020-06-27 14:52:16.602] 
+[2020-06-27 14:52:16.602] 
+[2020-06-27 14:52:16.807] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.exe
+[2020-06-27 14:52:16.816] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.js
+[2020-06-27 14:52:16.826] C:\nodejs\nodejs\node_global\tsc    
+[2020-06-27 14:52:16.826] C:\nodejs\nodejs\node_global\tsc.cmd
+[2020-06-27 14:52:16.840] Microsoft Windows [Version 10.0.18363.900]
+[2020-06-27 14:52:16.840] (c) 2019 Microsoft Corporation. All rights reserved.
+[2020-06-27 14:52:16.840] 
+[2020-06-27 14:52:16.840] benju@ASUS-PC C:\Users\benju>cd D:\prj\angular
+[2020-06-27 14:52:16.840] 
+[2020-06-27 14:52:16.840] benju@ASUS-PC C:\Users\benju>d:
+[2020-06-27 14:52:16.840] 
+[2020-06-27 14:52:16.840] benju@ASUS-PC D:\prj\angular>where tsc
+[2020-06-27 14:52:16.840] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.exe
+[2020-06-27 14:52:16.840] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.js
+[2020-06-27 14:52:16.840] C:\nodejs\nodejs\node_global\tsc
+[2020-06-27 14:52:16.840] C:\nodejs\nodejs\node_global\tsc.cmd
+[2020-06-27 14:52:16.840] 
+[2020-06-27 14:52:16.840] benju@ASUS-PC D:\prj\angular>where tsc
+[2020-06-27 14:52:16.840] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.exe
+[2020-06-27 14:52:16.840] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.js
+[2020-06-27 14:52:16.840] C:\nodejs\nodejs\node_global\tsc
+[2020-06-27 14:52:16.840] C:\nodejs\nodejs\node_global\tsc.cmd
+[2020-06-27 14:52:16.840] 
+[2020-06-27 14:52:16.840] benju@ASUS-PC D:\prj\angular>
+[2020-06-27 14:52:16.840] 
+[2020-06-27 14:52:16.840] 
+[2020-06-27 14:52:16.840] 
+[2020-06-27 14:52:26.964] exit

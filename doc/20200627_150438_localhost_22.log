@@ -1,0 +1,221 @@
+
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.347] 
+[2020-06-27 15:04:39.359] Microsoft Windows [Version 10.0.18363.900]
+[2020-06-27 15:04:39.359] (c) 2019 Microsoft Corporation. All rights reserved.
+[2020-06-27 15:04:39.359] 
+[2020-06-27 15:04:39.359] benju@ASUS-PC C:\Users\benju>set
+[2020-06-27 15:04:41.576] ALLUSERSPROFILE=C:\ProgramData
+[2020-06-27 15:04:41.576] ANT_HOME=C:\apache-ant-1.9.4
+[2020-06-27 15:04:41.576] APPDATA=C:\Users\benju\AppData\Roaming
+[2020-06-27 15:04:41.576] ChocolateyInstall=C:\ProgramData\chocolatey
+[2020-06-27 15:04:41.576] ChocolateyLastPathUpdate=132363989232338855
+[2020-06-27 15:04:41.576] CommonProgramFiles=C:\Program Files\Common Files
+[2020-06-27 15:04:41.576] CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+[2020-06-27 15:04:41.576] CommonProgramW6432=C:\Program Files\Common Files
+[2020-06-27 15:04:41.576] COMPUTERNAME=ASUS-PC
+[2020-06-27 15:04:41.576] ComSpec=C:\WINDOWS\system32\cmd.exe
+[2020-06-27 15:04:41.576] DriverData=C:\Windows\System32\Drivers\DriverData
+[2020-06-27 15:04:41.576] FP_NO_HOST_CHECK=NO
+[2020-06-27 15:04:41.576] HOME=C:\Users\benju
+[2020-06-27 15:04:41.576] HOMEDRIVE=C:
+[2020-06-27 15:04:41.576] HOMEPATH=\Users\benju
+[2020-06-27 15:04:41.576] JAVA_HOME=C:\jdk1.8.0_202
+[2020-06-27 15:04:41.576] LOCALAPPDATA=C:\Users\benju\AppData\Local
+[2020-06-27 15:04:41.576] LOGNAME=benju
+[2020-06-27 15:04:41.576] NODE_PATH=C:\nodejs\nodejs\node_global\node_modules        
+[2020-06-27 15:04:41.576] NUMBER_OF_PROCESSORS=8
+[2020-06-27 15:04:41.576] OneDrive=C:\Users\benju\OneDrive
+[2020-06-27 15:04:41.576] OneDriveConsumer=C:\Users\benju\OneDrive
+[2020-06-27 15:04:41.584] OPENCV_DIR=C:\opencv\build\
+[2020-06-27 15:04:41.584] OPENSSL_CONF=C:\PostgreSQL\psqlODBC\etc\openssl.cnf
+[2020-06-27 15:04:41.584] OS=Windows_NT
+[2020-06-27 15:04:41.584] Path=C:\PostgreSQL\12\bin\;C:\Python38\Scripts\;C:\Python38\;C:\oraclexe\app\ora
+[2020-06-27 15:04:41.584] cle\product\11.2.0\server\bin;C:\Program Files (x86)\Windows Resource Kits\Tools
+[2020-06-27 15:04:41.584] \;D:\prj\cob\gnucobol-3.0-rc1\build_windows\Win32\Release;C:\Program Files (x86)
+[2020-06-27 15:04:41.584] \MySQL\MySQL Server 5.6\bin;C:\apache-ant-1.9.4\bin;C:\jdk1.8.0_202\bin;C:\Progr
+[2020-06-27 15:04:41.584] am Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows
+[2020-06-27 15:04:41.584] \system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerSh
+[2020-06-27 15:04:41.584] ell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Pr
+[2020-06-27 15:04:41.584] ogram Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x8
+[2020-06-27 15:04:41.584] 6)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\
+[2020-06-27 15:04:41.587] Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Pr
+[2020-06-27 15:04:41.587] ogram Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Se
+[2020-06-27 15:04:41.587] rver\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Pr
+[2020-06-27 15:04:41.587] ogram Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\MySQL\My
+[2020-06-27 15:04:41.587] SQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\;C:\Program Files (x86)\NVIDIA Corp
+[2020-06-27 15:04:41.587] oration\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsP
+[2020-06-27 15:04:41.587] owerShell\v1.0\;C:\WINDOWS\System32\Wbem;C:\Program Files (x86)\Microsoft Visual
+[2020-06-27 15:04:41.587]  Studio 12.0\VC\bin;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Bin;C:\W
+[2020-06-27 15:04:41.587] INDOWS\System32\OpenSSH\;C:\opencv\build\bin\;C:\opencv\build\x64\vc15\bin\;C:\o
+[2020-06-27 15:04:41.587] pencv\build\java\x64\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Progr
+[2020-06-27 15:04:41.587] am Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Ser
+[2020-06-27 15:04:41.594] ver\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Win
+[2020-06-27 15:04:41.594] RAR\;C:\Program Files\Redis\;C:\Program Files\Amazon\AWSCLI\bin\;C:\nodejs\nodej
+[2020-06-27 15:04:41.594] s\;C:\ProgramData\chocolatey\bin;C:\nodejs\nodejs\node_global\;C:\Program Files\
+[2020-06-27 15:04:41.594] TortoiseGit\bin;C:\tools\ffmpeg\bin;C:\opencv-3.4.10\build\x64\vc14\bin\;C:\open
+[2020-06-27 15:04:41.594] cv-2.4.13.6\build\x64\vc14\bin\;C:\Users\benju\AppData\Local\Microsoft\WindowsAp
+[2020-06-27 15:04:41.594] ps;C:\Users\benju\.dotnet\tools;C:\Users\benju\.cargo\bin;C:\Users\benju\AppData
+[2020-06-27 15:04:41.594] \Local\Microsoft\WindowsApps;C:\Users\benju\AppData\Local\GitHubDesktop\bin;C:\U
+[2020-06-27 15:04:41.594] sers\benju\AppData\Roaming\npm
+[2020-06-27 15:04:41.594] PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+[2020-06-27 15:04:41.594] PROCESSOR_ARCHITECTURE=AMD64
+[2020-06-27 15:04:41.594] PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+[2020-06-27 15:04:41.628] PROCESSOR_LEVEL=6
+[2020-06-27 15:04:41.628] PROCESSOR_REVISION=3c03
+[2020-06-27 15:04:41.628] ProgramData=C:\ProgramData
+[2020-06-27 15:04:41.628] ProgramFiles=C:\Program Files
+[2020-06-27 15:04:41.628] ProgramFiles(x86)=C:\Program Files (x86)
+[2020-06-27 15:04:41.628] ProgramW6432=C:\Program Files
+[2020-06-27 15:04:41.628] PROMPT=benju@ASUS-PC $P$G
+[2020-06-27 15:04:41.628] PSModulePath=C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
+[2020-06-27 15:04:41.628] PUBLIC=C:\Users\Public
+[2020-06-27 15:04:41.628] SHELL=c:\windows\system32\cmd.exe
+[2020-06-27 15:04:41.628] SSH_CLIENT=::1 50690 22
+[2020-06-27 15:04:41.628] SSH_CONNECTION=::1 50690 ::1 22
+[2020-06-27 15:04:41.628] SSH_TTY=windows-pty
+[2020-06-27 15:04:41.628] SystemDrive=C:
+[2020-06-27 15:04:41.628] SystemRoot=C:\WINDOWS
+[2020-06-27 15:04:41.628] TEMP=C:\Users\benju\AppData\Local\Temp
+[2020-06-27 15:04:41.628] TERM=xterm
+[2020-06-27 15:04:41.628] TMP=C:\Users\benju\AppData\Local\Temp
+[2020-06-27 15:04:41.628] USER=benju
+[2020-06-27 15:04:41.628] USERDOMAIN=WORKGROUP
+[2020-06-27 15:04:41.628] USERNAME=benju
+[2020-06-27 15:04:41.643] USERPROFILE=C:\Users\benju
+[2020-06-27 15:04:41.643] VS120COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools
+[2020-06-27 15:04:41.643] \
+[2020-06-27 15:04:41.643] VS160COMCOMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\
+[2020-06-27 15:04:41.643] Common7\Tools\
+[2020-06-27 15:04:41.643] windir=C:\WINDOWS
+[2020-06-27 15:04:41.643] 
+[2020-06-27 15:04:41.643] benju@ASUS-PC C:\Users\benju>
+[2020-06-27 15:06:18.310] benju@ASUS-PC C:\Users\benju>wher tsc
+[2020-06-27 15:06:21.486] 'wher' は、内部コマンドまたは外部コマンド、
+[2020-06-27 15:06:21.486] 操作可能なプログラムまたはバッチ ファイルとして認識されていません。
+[2020-06-27 15:06:21.491] 
+[2020-06-27 15:06:21.491] benju@ASUS-PC C:\Users\benju>whre  ere tsc
+[2020-06-27 15:06:27.714] SSH_CONNECTION=::1 50690 ::1 22
+[2020-06-27 15:06:27.714] SSH_TTY=windows-pty
+[2020-06-27 15:06:27.714] SystemDrive=C:
+[2020-06-27 15:06:27.714] SystemRoot=C:\WINDOWS
+[2020-06-27 15:06:27.714] TEMP=C:\Users\benju\AppData\Local\Temp
+[2020-06-27 15:06:27.714] TERM=xterm
+[2020-06-27 15:06:27.714] TMP=C:\Users\benju\AppData\Local\Temp
+[2020-06-27 15:06:27.714] USER=benju
+[2020-06-27 15:06:27.714] USERDOMAIN=WORKGROUP
+[2020-06-27 15:06:27.714] USERNAME=benju
+[2020-06-27 15:06:27.714] USERPROFILE=C:\Users\benju
+[2020-06-27 15:06:27.714] VS120COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools
+[2020-06-27 15:06:27.714] \
+[2020-06-27 15:06:27.714] VS160COMCOMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\
+[2020-06-27 15:06:27.714] Common7\Tools\
+[2020-06-27 15:06:27.714] windir=C:\WINDOWS
+[2020-06-27 15:06:27.714] 
+[2020-06-27 15:06:27.714] benju@ASUS-PC C:\Users\benju>
+[2020-06-27 15:06:27.714] benju@ASUS-PC C:\Users\benju>wher tsc
+[2020-06-27 15:06:27.714] 'wher' は、内部コマンドまたは外部コマンド、
+[2020-06-27 15:06:27.714] 操作可能なプログラムまたはバッチ ファイルとして認識されていません。
+[2020-06-27 15:06:27.714] 
+[2020-06-27 15:06:27.714] benju@ASUS-PC C:\Users\benju>where tsc
+[2020-06-27 15:06:28.057] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.exe
+[2020-06-27 15:06:28.059] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.js
+[2020-06-27 15:06:28.072] C:\nodejs\nodejs\node_global\tsc
+[2020-06-27 15:06:28.073] C:\nodejs\nodejs\node_global\tsc.cmd
+[2020-06-27 15:06:28.090] TEMP=C:\Users\benju\AppData\Local\Temp
+[2020-06-27 15:06:28.090] TERM=xterm
+[2020-06-27 15:06:28.090] TMP=C:\Users\benju\AppData\Local\Temp
+[2020-06-27 15:06:28.090] USER=benju
+[2020-06-27 15:06:28.090] USERDOMAIN=WORKGROUP
+[2020-06-27 15:06:28.090] USERNAME=benju
+[2020-06-27 15:06:28.090] USERPROFILE=C:\Users\benju
+[2020-06-27 15:06:28.090] VS120COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools
+[2020-06-27 15:06:28.090] \
+[2020-06-27 15:06:28.090] VS160COMCOMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\
+[2020-06-27 15:06:28.090] Common7\Tools\
+[2020-06-27 15:06:28.090] windir=C:\WINDOWS
+[2020-06-27 15:06:28.090] 
+[2020-06-27 15:06:28.090] benju@ASUS-PC C:\Users\benju>
+[2020-06-27 15:06:28.090] benju@ASUS-PC C:\Users\benju>wher tsc
+[2020-06-27 15:06:28.090] 'wher' は、内部コマンドまたは外部コマンド、
+[2020-06-27 15:06:28.090] 操作可能なプログラムまたはバッチ ファイルとして認識されていません。
+[2020-06-27 15:06:28.090] 
+[2020-06-27 15:06:28.090] benju@ASUS-PC C:\Users\benju>where tsc
+[2020-06-27 15:06:28.090] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.exe
+[2020-06-27 15:06:28.090] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.js
+[2020-06-27 15:06:28.090] C:\nodejs\nodejs\node_global\tsc
+[2020-06-27 15:06:28.090] C:\nodejs\nodejs\node_global\tsc.cmd
+[2020-06-27 15:06:28.094] 
+[2020-06-27 15:06:28.094] benju@ASUS-PC C:\Users\benju>
+[2020-06-27 15:11:00.615] benju@ASUS-PC C:\Users\benju>exit    where tsc
+[2020-06-27 15:19:31.305] USER=benju
+[2020-06-27 15:19:31.305] USERDOMAIN=WORKGROUP
+[2020-06-27 15:19:31.305] USERNAME=benju
+[2020-06-27 15:19:31.305] USERPROFILE=C:\Users\benju
+[2020-06-27 15:19:31.305] VS120COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools
+[2020-06-27 15:19:31.305] \
+[2020-06-27 15:19:31.305] VS160COMCOMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\
+[2020-06-27 15:19:31.305] Common7\Tools\
+[2020-06-27 15:19:31.305] windir=C:\WINDOWS
+[2020-06-27 15:19:31.305] 
+[2020-06-27 15:19:31.305] benju@ASUS-PC C:\Users\benju>
+[2020-06-27 15:19:31.305] benju@ASUS-PC C:\Users\benju>wher tsc
+[2020-06-27 15:19:31.305] 'wher' は、内部コマンドまたは外部コマンド、
+[2020-06-27 15:19:31.305] 操作可能なプログラムまたはバッチ ファイルとして認識されていません。
+[2020-06-27 15:19:31.305] 
+[2020-06-27 15:19:31.305] benju@ASUS-PC C:\Users\benju>where tsc
+[2020-06-27 15:19:31.305] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.exe
+[2020-06-27 15:19:31.305] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.js
+[2020-06-27 15:19:31.305] C:\nodejs\nodejs\node_global\tsc
+[2020-06-27 15:19:31.305] C:\nodejs\nodejs\node_global\tsc.cmd
+[2020-06-27 15:19:31.305] 
+[2020-06-27 15:19:31.305] benju@ASUS-PC C:\Users\benju>
+[2020-06-27 15:19:31.305] benju@ASUS-PC C:\Users\benju>where tsc
+[2020-06-27 15:19:31.493] C:\nodejs\nodejs\node_global\tsc
+[2020-06-27 15:19:31.494] C:\nodejs\nodejs\node_global\tsc.cmd
+[2020-06-27 15:19:31.512] USERNAME=benju
+[2020-06-27 15:19:31.512] USERPROFILE=C:\Users\benju
+[2020-06-27 15:19:31.512] VS120COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools
+[2020-06-27 15:19:31.512] \
+[2020-06-27 15:19:31.512] VS160COMCOMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\
+[2020-06-27 15:19:31.512] Common7\Tools\
+[2020-06-27 15:19:31.512] windir=C:\WINDOWS
+[2020-06-27 15:19:31.512] 
+[2020-06-27 15:19:31.512] benju@ASUS-PC C:\Users\benju>
+[2020-06-27 15:19:31.512] benju@ASUS-PC C:\Users\benju>wher tsc
+[2020-06-27 15:19:31.512] 'wher' は、内部コマンドまたは外部コマンド、
+[2020-06-27 15:19:31.512] 操作可能なプログラムまたはバッチ ファイルとして認識されていません。
+[2020-06-27 15:19:31.512] 
+[2020-06-27 15:19:31.512] benju@ASUS-PC C:\Users\benju>where tsc
+[2020-06-27 15:19:31.512] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.exe
+[2020-06-27 15:19:31.512] C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\tsc.js
+[2020-06-27 15:19:31.512] C:\nodejs\nodejs\node_global\tsc
+[2020-06-27 15:19:31.512] C:\nodejs\nodejs\node_global\tsc.cmd
+[2020-06-27 15:19:31.512] 
+[2020-06-27 15:19:31.512] benju@ASUS-PC C:\Users\benju>
+[2020-06-27 15:19:31.512] benju@ASUS-PC C:\Users\benju>where tsc
+[2020-06-27 15:19:31.512] C:\nodejs\nodejs\node_global\tsc
+[2020-06-27 15:19:31.515] C:\nodejs\nodejs\node_global\tsc.cmd
+[2020-06-27 15:19:31.515] 
+[2020-06-27 15:19:31.515] benju@ASUS-PC C:\Users\benju>exit
